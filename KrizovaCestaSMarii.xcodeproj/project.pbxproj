@@ -1,0 +1,827 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01026C43231E9DA000C7E52B /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01026C42231E9DA000C7E52B /* MainTableViewController.swift */; };
+		01026C45231E9DB900C7E52B /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01026C44231E9DB900C7E52B /* MainTableViewCell.swift */; };
+		010C71E6231FA42F00EB3B2D /* NotificationsName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010C71E5231FA42F00EB3B2D /* NotificationsName.swift */; };
+		010C71E9231FA6D000EB3B2D /* CrossColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010C71E8231FA6D000EB3B2D /* CrossColors.swift */; };
+		010C71ED231FC6DE00EB3B2D /* CrossStationsMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010C71EC231FC6DE00EB3B2D /* CrossStationsMenu.swift */; };
+		010C71EF231FC8C100EB3B2D /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010C71EE231FC8C100EB3B2D /* AboutViewController.swift */; };
+		010C71F1231FE75100EB3B2D /* AboutDaugherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010C71F0231FE75100EB3B2D /* AboutDaugherViewController.swift */; };
+		010C71F3231FEA6700EB3B2D /* StabatMaterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010C71F2231FEA6700EB3B2D /* StabatMaterViewController.swift */; };
+		010C71F5231FEDE600EB3B2D /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010C71F4231FEDE600EB3B2D /* SettingsTableViewController.swift */; };
+		010C71F7231FF44100EB3B2D /* FontViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010C71F6231FF44100EB3B2D /* FontViewController.swift */; };
+		010C71F9231FF6F700EB3B2D /* GeneratorText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010C71F8231FF6F700EB3B2D /* GeneratorText.swift */; };
+		010C71FC2320534100EB3B2D /* stabat_mater.json in Resources */ = {isa = PBXBuildFile; fileRef = 010C71FA2320534100EB3B2D /* stabat_mater.json */; };
+		010C71FD2320534100EB3B2D /* cross_stations.json in Resources */ = {isa = PBXBuildFile; fileRef = 010C71FB2320534100EB3B2D /* cross_stations.json */; };
+		010C71FF23205A0800EB3B2D /* paulin_prayers.json in Resources */ = {isa = PBXBuildFile; fileRef = 010C71FE23205A0800EB3B2D /* paulin_prayers.json */; };
+		01797175231E8BF800BB9454 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01797174231E8BF800BB9454 /* AppDelegate.swift */; };
+		0179717A231E8BF800BB9454 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01797178231E8BF800BB9454 /* Main.storyboard */; };
+		0179717C231E8BFA00BB9454 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0179717B231E8BFA00BB9454 /* Assets.xcassets */; };
+		0179717F231E8BFA00BB9454 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0179717D231E8BFA00BB9454 /* LaunchScreen.storyboard */; };
+		0179718A231E8BFA00BB9454 /* KrizovaCestaSMariiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01797189231E8BFA00BB9454 /* KrizovaCestaSMariiTests.swift */; };
+		01797195231E8BFA00BB9454 /* KrizovaCestaSMariiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01797194231E8BFA00BB9454 /* KrizovaCestaSMariiUITests.swift */; };
+		017BDA742327D3A00019E672 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017BDA732327D39F0019E672 /* R.generated.swift */; };
+		01EECA42232248C10071732B /* prayer.json in Resources */ = {isa = PBXBuildFile; fileRef = 01EECA41232248C10071732B /* prayer.json */; };
+		01EECA452322496D0071732B /* PaylinPrayersStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EECA442322496D0071732B /* PaylinPrayersStructure.swift */; };
+		01EECA4723224AB20071732B /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EECA4623224AB20071732B /* Station.swift */; };
+		01EECA4923224AFA0071732B /* StationsStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EECA4823224AFA0071732B /* StationsStructure.swift */; };
+		01EECA4B23224B430071732B /* PaulinPrayerDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EECA4A23224B430071732B /* PaulinPrayerDataService.swift */; };
+		01EECA4D23224C200071732B /* StationsDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EECA4C23224C200071732B /* StationsDataService.swift */; };
+		01EECA4F23224CA00071732B /* StabatMaterStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EECA4E23224CA00071732B /* StabatMaterStructure.swift */; };
+		01EECA5123224CE70071732B /* StabatMaterDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EECA5023224CE70071732B /* StabatMaterDataService.swift */; };
+		01EECA5323224D3B0071732B /* PrayerStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EECA5223224D3B0071732B /* PrayerStructure.swift */; };
+		01EECA5523224DC00071732B /* PrayerDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EECA5423224DC00071732B /* PrayerDataService.swift */; };
+		01EECA572322535B0071732B /* AboutCrossViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EECA562322535B0071732B /* AboutCrossViewController.swift */; };
+		01EECA5923226BC20071732B /* ChildStabatMaterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EECA5823226BC20071732B /* ChildStabatMaterViewController.swift */; };
+		BD5E2CB66278E13D50F8DEBC /* Pods_KrizovaCestaSMarii.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41E72E99C16711F5282869E4 /* Pods_KrizovaCestaSMarii.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		01797186231E8BFA00BB9454 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 01797169231E8BF800BB9454 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01797170231E8BF800BB9454;
+			remoteInfo = KrizovaCestaSMarii;
+		};
+		01797191231E8BFA00BB9454 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 01797169231E8BF800BB9454 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01797170231E8BF800BB9454;
+			remoteInfo = KrizovaCestaSMarii;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01026C42231E9DA000C7E52B /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		01026C44231E9DB900C7E52B /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
+		010C71E5231FA42F00EB3B2D /* NotificationsName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsName.swift; sourceTree = "<group>"; };
+		010C71E8231FA6D000EB3B2D /* CrossColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrossColors.swift; sourceTree = "<group>"; };
+		010C71EC231FC6DE00EB3B2D /* CrossStationsMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrossStationsMenu.swift; sourceTree = "<group>"; };
+		010C71EE231FC8C100EB3B2D /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		010C71F0231FE75100EB3B2D /* AboutDaugherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutDaugherViewController.swift; sourceTree = "<group>"; };
+		010C71F2231FEA6700EB3B2D /* StabatMaterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StabatMaterViewController.swift; sourceTree = "<group>"; };
+		010C71F4231FEDE600EB3B2D /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		010C71F6231FF44100EB3B2D /* FontViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontViewController.swift; sourceTree = "<group>"; };
+		010C71F8231FF6F700EB3B2D /* GeneratorText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GeneratorText.swift; path = "/Users/phracek/work/programming/Apple/krizova-cesta-s-marii-ios/KrizovaCestaSMarii/Utilities/GeneratorText.swift"; sourceTree = "<absolute>"; };
+		010C71FA2320534100EB3B2D /* stabat_mater.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = stabat_mater.json; sourceTree = "<group>"; };
+		010C71FB2320534100EB3B2D /* cross_stations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cross_stations.json; sourceTree = "<group>"; };
+		010C71FE23205A0800EB3B2D /* paulin_prayers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = paulin_prayers.json; sourceTree = "<group>"; };
+		01797171231E8BF800BB9454 /* KrizovaCestaSMarii.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KrizovaCestaSMarii.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		01797174231E8BF800BB9454 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		01797179231E8BF800BB9454 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0179717B231E8BFA00BB9454 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0179717E231E8BFA00BB9454 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		01797180231E8BFA00BB9454 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01797185231E8BFA00BB9454 /* KrizovaCestaSMariiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KrizovaCestaSMariiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		01797189231E8BFA00BB9454 /* KrizovaCestaSMariiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KrizovaCestaSMariiTests.swift; sourceTree = "<group>"; };
+		0179718B231E8BFA00BB9454 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01797190231E8BFA00BB9454 /* KrizovaCestaSMariiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KrizovaCestaSMariiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		01797194231E8BFA00BB9454 /* KrizovaCestaSMariiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KrizovaCestaSMariiUITests.swift; sourceTree = "<group>"; };
+		01797196231E8BFA00BB9454 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		017BDA732327D39F0019E672 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		01EECA41232248C10071732B /* prayer.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = prayer.json; sourceTree = "<group>"; };
+		01EECA442322496D0071732B /* PaylinPrayersStructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PaylinPrayersStructure.swift; path = KrizovaCestaSMarii/Model/PaylinPrayersStructure.swift; sourceTree = SOURCE_ROOT; };
+		01EECA4623224AB20071732B /* Station.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
+		01EECA4823224AFA0071732B /* StationsStructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsStructure.swift; sourceTree = "<group>"; };
+		01EECA4A23224B430071732B /* PaulinPrayerDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaulinPrayerDataService.swift; sourceTree = "<group>"; };
+		01EECA4C23224C200071732B /* StationsDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsDataService.swift; sourceTree = "<group>"; };
+		01EECA4E23224CA00071732B /* StabatMaterStructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StabatMaterStructure.swift; sourceTree = "<group>"; };
+		01EECA5023224CE70071732B /* StabatMaterDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StabatMaterDataService.swift; sourceTree = "<group>"; };
+		01EECA5223224D3B0071732B /* PrayerStructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerStructure.swift; sourceTree = "<group>"; };
+		01EECA5423224DC00071732B /* PrayerDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerDataService.swift; sourceTree = "<group>"; };
+		01EECA562322535B0071732B /* AboutCrossViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutCrossViewController.swift; sourceTree = "<group>"; };
+		01EECA5823226BC20071732B /* ChildStabatMaterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildStabatMaterViewController.swift; sourceTree = "<group>"; };
+		41E72E99C16711F5282869E4 /* Pods_KrizovaCestaSMarii.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KrizovaCestaSMarii.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B76E0668A9972040FED693C /* Pods-KrizovaCestaSMarii.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KrizovaCestaSMarii.release.xcconfig"; path = "Target Support Files/Pods-KrizovaCestaSMarii/Pods-KrizovaCestaSMarii.release.xcconfig"; sourceTree = "<group>"; };
+		9ABF6771C82E4D2432B97E7D /* Pods-KrizovaCestaSMarii.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KrizovaCestaSMarii.debug.xcconfig"; path = "Target Support Files/Pods-KrizovaCestaSMarii/Pods-KrizovaCestaSMarii.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0179716E231E8BF800BB9454 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD5E2CB66278E13D50F8DEBC /* Pods_KrizovaCestaSMarii.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01797182231E8BFA00BB9454 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0179718D231E8BFA00BB9454 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01026C46231E9F9B00C7E52B /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				01EECA41232248C10071732B /* prayer.json */,
+				010C71FB2320534100EB3B2D /* cross_stations.json */,
+				010C71FA2320534100EB3B2D /* stabat_mater.json */,
+				010C71FE23205A0800EB3B2D /* paulin_prayers.json */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		01026C47231E9FA300C7E52B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				01026C42231E9DA000C7E52B /* MainTableViewController.swift */,
+				010C71EE231FC8C100EB3B2D /* AboutViewController.swift */,
+				010C71F4231FEDE600EB3B2D /* SettingsTableViewController.swift */,
+				010C71F6231FF44100EB3B2D /* FontViewController.swift */,
+				01EECA5823226BC20071732B /* ChildStabatMaterViewController.swift */,
+				010C71F2231FEA6700EB3B2D /* StabatMaterViewController.swift */,
+				010C71F0231FE75100EB3B2D /* AboutDaugherViewController.swift */,
+				01EECA562322535B0071732B /* AboutCrossViewController.swift */,
+				01026C44231E9DB900C7E52B /* MainTableViewCell.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		01026C48231E9FAA00C7E52B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				01EECA442322496D0071732B /* PaylinPrayersStructure.swift */,
+				01EECA4623224AB20071732B /* Station.swift */,
+				01EECA4823224AFA0071732B /* StationsStructure.swift */,
+				01EECA4E23224CA00071732B /* StabatMaterStructure.swift */,
+				01EECA5223224D3B0071732B /* PrayerStructure.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		010C71E7231FA43400EB3B2D /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				010C71F8231FF6F700EB3B2D /* GeneratorText.swift */,
+				010C71E5231FA42F00EB3B2D /* NotificationsName.swift */,
+				010C71E8231FA6D000EB3B2D /* CrossColors.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		01797168231E8BF800BB9454 = {
+			isa = PBXGroup;
+			children = (
+				01797173231E8BF800BB9454 /* KrizovaCestaSMarii */,
+				01797188231E8BFA00BB9454 /* KrizovaCestaSMariiTests */,
+				01797193231E8BFA00BB9454 /* KrizovaCestaSMariiUITests */,
+				01797172231E8BF800BB9454 /* Products */,
+				401559BDC7864E7E37A564F1 /* Pods */,
+				AC65D82971A941A5D96A7A00 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		01797172231E8BF800BB9454 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				01797171231E8BF800BB9454 /* KrizovaCestaSMarii.app */,
+				01797185231E8BFA00BB9454 /* KrizovaCestaSMariiTests.xctest */,
+				01797190231E8BFA00BB9454 /* KrizovaCestaSMariiUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		01797173231E8BF800BB9454 /* KrizovaCestaSMarii */ = {
+			isa = PBXGroup;
+			children = (
+				017BDA732327D39F0019E672 /* R.generated.swift */,
+				01EECA43232249130071732B /* Services */,
+				010C71EC231FC6DE00EB3B2D /* CrossStationsMenu.swift */,
+				010C71E7231FA43400EB3B2D /* Utilities */,
+				01026C48231E9FAA00C7E52B /* Model */,
+				01026C47231E9FA300C7E52B /* Controllers */,
+				01026C46231E9F9B00C7E52B /* SupportFiles */,
+				01797174231E8BF800BB9454 /* AppDelegate.swift */,
+				01797178231E8BF800BB9454 /* Main.storyboard */,
+				0179717B231E8BFA00BB9454 /* Assets.xcassets */,
+				0179717D231E8BFA00BB9454 /* LaunchScreen.storyboard */,
+				01797180231E8BFA00BB9454 /* Info.plist */,
+			);
+			path = KrizovaCestaSMarii;
+			sourceTree = "<group>";
+		};
+		01797188231E8BFA00BB9454 /* KrizovaCestaSMariiTests */ = {
+			isa = PBXGroup;
+			children = (
+				01797189231E8BFA00BB9454 /* KrizovaCestaSMariiTests.swift */,
+				0179718B231E8BFA00BB9454 /* Info.plist */,
+			);
+			path = KrizovaCestaSMariiTests;
+			sourceTree = "<group>";
+		};
+		01797193231E8BFA00BB9454 /* KrizovaCestaSMariiUITests */ = {
+			isa = PBXGroup;
+			children = (
+				01797194231E8BFA00BB9454 /* KrizovaCestaSMariiUITests.swift */,
+				01797196231E8BFA00BB9454 /* Info.plist */,
+			);
+			path = KrizovaCestaSMariiUITests;
+			sourceTree = "<group>";
+		};
+		01EECA43232249130071732B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				01EECA4A23224B430071732B /* PaulinPrayerDataService.swift */,
+				01EECA4C23224C200071732B /* StationsDataService.swift */,
+				01EECA5023224CE70071732B /* StabatMaterDataService.swift */,
+				01EECA5423224DC00071732B /* PrayerDataService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		401559BDC7864E7E37A564F1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9ABF6771C82E4D2432B97E7D /* Pods-KrizovaCestaSMarii.debug.xcconfig */,
+				8B76E0668A9972040FED693C /* Pods-KrizovaCestaSMarii.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AC65D82971A941A5D96A7A00 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				41E72E99C16711F5282869E4 /* Pods_KrizovaCestaSMarii.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		01797170231E8BF800BB9454 /* KrizovaCestaSMarii */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01797199231E8BFA00BB9454 /* Build configuration list for PBXNativeTarget "KrizovaCestaSMarii" */;
+			buildPhases = (
+				B5C1DFD0DF0AEE21F1408F31 /* [CP] Check Pods Manifest.lock */,
+				017BDA70232799A60019E672 /* ShellScript */,
+				0179716D231E8BF800BB9454 /* Sources */,
+				0179716E231E8BF800BB9454 /* Frameworks */,
+				0179716F231E8BF800BB9454 /* Resources */,
+				8128727F58B51DE2005672BB /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KrizovaCestaSMarii;
+			productName = KrizovaCestaSMarii;
+			productReference = 01797171231E8BF800BB9454 /* KrizovaCestaSMarii.app */;
+			productType = "com.apple.product-type.application";
+		};
+		01797184231E8BFA00BB9454 /* KrizovaCestaSMariiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0179719C231E8BFA00BB9454 /* Build configuration list for PBXNativeTarget "KrizovaCestaSMariiTests" */;
+			buildPhases = (
+				01797181231E8BFA00BB9454 /* Sources */,
+				01797182231E8BFA00BB9454 /* Frameworks */,
+				01797183231E8BFA00BB9454 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				01797187231E8BFA00BB9454 /* PBXTargetDependency */,
+			);
+			name = KrizovaCestaSMariiTests;
+			productName = KrizovaCestaSMariiTests;
+			productReference = 01797185231E8BFA00BB9454 /* KrizovaCestaSMariiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0179718F231E8BFA00BB9454 /* KrizovaCestaSMariiUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0179719F231E8BFA00BB9454 /* Build configuration list for PBXNativeTarget "KrizovaCestaSMariiUITests" */;
+			buildPhases = (
+				0179718C231E8BFA00BB9454 /* Sources */,
+				0179718D231E8BFA00BB9454 /* Frameworks */,
+				0179718E231E8BFA00BB9454 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				01797192231E8BFA00BB9454 /* PBXTargetDependency */,
+			);
+			name = KrizovaCestaSMariiUITests;
+			productName = KrizovaCestaSMariiUITests;
+			productReference = 01797190231E8BFA00BB9454 /* KrizovaCestaSMariiUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		01797169231E8BF800BB9454 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "Petr Hracek";
+				TargetAttributes = {
+					01797170231E8BF800BB9454 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					01797184231E8BFA00BB9454 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 01797170231E8BF800BB9454;
+					};
+					0179718F231E8BFA00BB9454 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 01797170231E8BF800BB9454;
+					};
+				};
+			};
+			buildConfigurationList = 0179716C231E8BF800BB9454 /* Build configuration list for PBXProject "KrizovaCestaSMarii" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 01797168231E8BF800BB9454;
+			productRefGroup = 01797172231E8BF800BB9454 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				01797170231E8BF800BB9454 /* KrizovaCestaSMarii */,
+				01797184231E8BFA00BB9454 /* KrizovaCestaSMariiTests */,
+				0179718F231E8BFA00BB9454 /* KrizovaCestaSMariiUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0179716F231E8BF800BB9454 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01EECA42232248C10071732B /* prayer.json in Resources */,
+				010C71FC2320534100EB3B2D /* stabat_mater.json in Resources */,
+				010C71FF23205A0800EB3B2D /* paulin_prayers.json in Resources */,
+				010C71FD2320534100EB3B2D /* cross_stations.json in Resources */,
+				0179717F231E8BFA00BB9454 /* LaunchScreen.storyboard in Resources */,
+				0179717C231E8BFA00BB9454 /* Assets.xcassets in Resources */,
+				0179717A231E8BF800BB9454 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01797183231E8BFA00BB9454 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0179718E231E8BFA00BB9454 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		017BDA70232799A60019E672 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
+		8128727F58B51DE2005672BB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KrizovaCestaSMarii/Pods-KrizovaCestaSMarii-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KrizovaCestaSMarii/Pods-KrizovaCestaSMarii-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KrizovaCestaSMarii/Pods-KrizovaCestaSMarii-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5C1DFD0DF0AEE21F1408F31 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KrizovaCestaSMarii-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0179716D231E8BF800BB9454 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01EECA5523224DC00071732B /* PrayerDataService.swift in Sources */,
+				01026C43231E9DA000C7E52B /* MainTableViewController.swift in Sources */,
+				017BDA742327D3A00019E672 /* R.generated.swift in Sources */,
+				010C71E6231FA42F00EB3B2D /* NotificationsName.swift in Sources */,
+				010C71F1231FE75100EB3B2D /* AboutDaugherViewController.swift in Sources */,
+				010C71ED231FC6DE00EB3B2D /* CrossStationsMenu.swift in Sources */,
+				010C71EF231FC8C100EB3B2D /* AboutViewController.swift in Sources */,
+				01026C45231E9DB900C7E52B /* MainTableViewCell.swift in Sources */,
+				01EECA5123224CE70071732B /* StabatMaterDataService.swift in Sources */,
+				01EECA4723224AB20071732B /* Station.swift in Sources */,
+				01EECA5323224D3B0071732B /* PrayerStructure.swift in Sources */,
+				01EECA5923226BC20071732B /* ChildStabatMaterViewController.swift in Sources */,
+				010C71F5231FEDE600EB3B2D /* SettingsTableViewController.swift in Sources */,
+				010C71E9231FA6D000EB3B2D /* CrossColors.swift in Sources */,
+				01EECA4923224AFA0071732B /* StationsStructure.swift in Sources */,
+				01EECA4F23224CA00071732B /* StabatMaterStructure.swift in Sources */,
+				01EECA452322496D0071732B /* PaylinPrayersStructure.swift in Sources */,
+				010C71F3231FEA6700EB3B2D /* StabatMaterViewController.swift in Sources */,
+				010C71F7231FF44100EB3B2D /* FontViewController.swift in Sources */,
+				010C71F9231FF6F700EB3B2D /* GeneratorText.swift in Sources */,
+				01797175231E8BF800BB9454 /* AppDelegate.swift in Sources */,
+				01EECA572322535B0071732B /* AboutCrossViewController.swift in Sources */,
+				01EECA4D23224C200071732B /* StationsDataService.swift in Sources */,
+				01EECA4B23224B430071732B /* PaulinPrayerDataService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01797181231E8BFA00BB9454 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0179718A231E8BFA00BB9454 /* KrizovaCestaSMariiTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0179718C231E8BFA00BB9454 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01797195231E8BFA00BB9454 /* KrizovaCestaSMariiUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		01797187231E8BFA00BB9454 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 01797170231E8BF800BB9454 /* KrizovaCestaSMarii */;
+			targetProxy = 01797186231E8BFA00BB9454 /* PBXContainerItemProxy */;
+		};
+		01797192231E8BFA00BB9454 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 01797170231E8BF800BB9454 /* KrizovaCestaSMarii */;
+			targetProxy = 01797191231E8BFA00BB9454 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		01797178231E8BF800BB9454 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				01797179231E8BF800BB9454 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0179717D231E8BFA00BB9454 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0179717E231E8BFA00BB9454 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		01797197231E8BFA00BB9454 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		01797198231E8BFA00BB9454 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0179719A231E8BFA00BB9454 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9ABF6771C82E4D2432B97E7D /* Pods-KrizovaCestaSMarii.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 32253C46P7;
+				INFOPLIST_FILE = KrizovaCestaSMarii/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.phracek.KrizovaCestaSMarii;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0179719B231E8BFA00BB9454 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B76E0668A9972040FED693C /* Pods-KrizovaCestaSMarii.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 32253C46P7;
+				INFOPLIST_FILE = KrizovaCestaSMarii/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.phracek.KrizovaCestaSMarii;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0179719D231E8BFA00BB9454 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 32253C46P7;
+				INFOPLIST_FILE = KrizovaCestaSMariiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.phracek.KrizovaCestaSMariiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KrizovaCestaSMarii.app/KrizovaCestaSMarii";
+			};
+			name = Debug;
+		};
+		0179719E231E8BFA00BB9454 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 32253C46P7;
+				INFOPLIST_FILE = KrizovaCestaSMariiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.phracek.KrizovaCestaSMariiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KrizovaCestaSMarii.app/KrizovaCestaSMarii";
+			};
+			name = Release;
+		};
+		017971A0231E8BFA00BB9454 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 32253C46P7;
+				INFOPLIST_FILE = KrizovaCestaSMariiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.phracek.KrizovaCestaSMariiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KrizovaCestaSMarii;
+			};
+			name = Debug;
+		};
+		017971A1231E8BFA00BB9454 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 32253C46P7;
+				INFOPLIST_FILE = KrizovaCestaSMariiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.phracek.KrizovaCestaSMariiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KrizovaCestaSMarii;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0179716C231E8BF800BB9454 /* Build configuration list for PBXProject "KrizovaCestaSMarii" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01797197231E8BFA00BB9454 /* Debug */,
+				01797198231E8BFA00BB9454 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01797199231E8BFA00BB9454 /* Build configuration list for PBXNativeTarget "KrizovaCestaSMarii" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0179719A231E8BFA00BB9454 /* Debug */,
+				0179719B231E8BFA00BB9454 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0179719C231E8BFA00BB9454 /* Build configuration list for PBXNativeTarget "KrizovaCestaSMariiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0179719D231E8BFA00BB9454 /* Debug */,
+				0179719E231E8BFA00BB9454 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0179719F231E8BFA00BB9454 /* Build configuration list for PBXNativeTarget "KrizovaCestaSMariiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				017971A0231E8BFA00BB9454 /* Debug */,
+				017971A1231E8BFA00BB9454 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 01797169231E8BF800BB9454 /* Project object */;
+}
