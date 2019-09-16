@@ -162,12 +162,14 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/BonMot/BonMot.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/DynamicColor/DynamicColor.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/TTTAttributedLabel/TTTAttributedLabel.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/XLPagerTabStrip/XLPagerTabStrip.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/BonMot/BonMot.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/DynamicColor/DynamicColor.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/TTTAttributedLabel/TTTAttributedLabel.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/XLPagerTabStrip/XLPagerTabStrip.framework"

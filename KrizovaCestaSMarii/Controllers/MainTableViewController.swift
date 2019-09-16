@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MainTableViewController: UITableViewController {
+class MainTableViewController: BaseTableViewController {
 
     enum RowType {
         case about_cross_stations
@@ -35,13 +35,13 @@ class MainTableViewController: UITableViewController {
         let userDefaults = UserDefaults.standard
         self.darkMode = userDefaults.bool(forKey: "NightSwitch")
         if self.darkMode {
-            self.tableView.backgroundColor = BackgroundNightMode
+            self.tableView.backgroundColor = UIColor.KrizovaCestaSMarii.backNightColor()
         } else {
-            self.tableView.backgroundColor = BackgroundLightMode
+            self.tableView.backgroundColor = UIColor.KrizovaCestaSMarii.backLightColor()
         }
         self.tableView.tableFooterView = UIView()
-        navigationController?.navigationBar.barTintColor = MainColor
-        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: MainTextColor]
+        navigationController?.navigationBar.barTintColor = UIColor.KrizovaCestaSMarii.mainColor()
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.KrizovaCestaSMarii.mainTextColor()]
         navigationController?.navigationBar.barStyle = UIBarStyle.black;
         NotificationCenter.default.addObserver(self, selector: #selector(darkModeEnabled(_:)), name: .darkModeEnabled, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(darkModeDisabled(_:)), name: .darkModeDisabled, object: nil)
@@ -78,39 +78,36 @@ class MainTableViewController: UITableViewController {
         cell.cellLabel.text = data.menu?.name
         cell.cellImage.image = data.menu?.photo
         if self.darkMode == true {
-            cell.backgroundColor = BackgroundNightMode
-            cell.cellLabel.textColor = TextNightMode
+            cell.backgroundColor = UIColor.KrizovaCestaSMarii.backNightColor()
+            cell.cellLabel.textColor = UIColor.KrizovaCestaSMarii.textNightColor()
         }
         else {
-            cell.backgroundColor = BackgroundLightMode
-            cell.cellLabel.textColor = TextLightMode
+            cell.backgroundColor = UIColor.KrizovaCestaSMarii.backLightColor()
+            cell.cellLabel.textColor = UIColor.KrizovaCestaSMarii.textLightColor()
         }
         return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let data = rowData[indexPath.row]
-        print(data)
+        let mainViewController = UIStoryboard(name: "Main", bundle: nil)
+        
         switch data.type {
-            
+        case .about_cross_stations:
+            let aboutCrossStations = mainViewController.instantiateViewController(withIdentifier: "AboutCrossStation")
+            navigationController?.pushViewController(aboutCrossStations, animated: true)
         case .stabat_mater:
-            let mainViewController = UIStoryboard(name: "Main", bundle: nil)
             let stabatViewController = mainViewController.instantiateViewController(withIdentifier: "StabatMater")
             navigationController?.pushViewController(stabatViewController, animated: true)
         case .setting:
-            let mainViewController = UIStoryboard(name: "Main", bundle: nil)
             let settingsTableViewController = mainViewController.instantiateViewController(withIdentifier: "Settings")
             navigationController?.pushViewController(settingsTableViewController, animated: true)
         case .about_app:
-            let mainViewController = UIStoryboard(name: "Main", bundle: nil)
             let stabatViewController = mainViewController.instantiateViewController(withIdentifier: "AboutApp")
             navigationController?.pushViewController(stabatViewController, animated: true)
-            print("finished2")
         case .about_daughters:
-            let mainViewController = UIStoryboard(name: "Main", bundle: nil)
             let stabatViewController = mainViewController.instantiateViewController(withIdentifier: "AboutDaughters")
             navigationController?.pushViewController(stabatViewController, animated: true)
-            print("finished3")
         default:
             fatalError("Unexpected raw")
         }
@@ -159,13 +156,13 @@ class MainTableViewController: UITableViewController {
     }
     @objc private func darkModeEnabled(_ notification: Notification) {
         self.darkMode = true
-        self.tableView.backgroundColor = BackgroundNightMode
+        self.tableView.backgroundColor = UIColor.KrizovaCestaSMarii.backNightColor()
         self.tableView.reloadData()
     }
     
     @objc private func darkModeDisabled(_ notification: Notification) {
         self.darkMode = false
-        self.tableView.backgroundColor = BackgroundLightMode
+        self.tableView.backgroundColor = UIColor.KrizovaCestaSMarii.backLightColor()
         self.tableView.reloadData()
     }
 }

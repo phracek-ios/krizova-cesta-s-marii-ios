@@ -47,7 +47,6 @@ func generateContent(text: String, font_name: String = "Helvetica", size: CGFloa
     )
     var generated_text = text
     generated_text = generated_text.replacingOccurrences(of: "<p>\n", with: "<p>")
-    generated_text = generated_text.replacingOccurrences(of: "<smaal>", with: "<small>")
     generated_text = generated_text.replacingOccurrences(of: "\n</p>", with: "</p>")
     generated_text = generated_text.replacingOccurrences(of: "[\\t\\n\\r][\\t\\n\\r]+", with: "\n", options: .regularExpression)
     generated_text = generated_text.replacingOccurrences(of: "<p>", with: "")

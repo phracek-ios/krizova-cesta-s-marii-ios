@@ -10,7 +10,7 @@ import UIKit
 import Foundation
 import BonMot
 
-class FontViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+class FontViewController: BaseViewController, UIPickerViewDelegate, UIPickerViewDataSource {
 
     @IBOutlet weak var fontNamePickerView: UIPickerView!
     @IBOutlet weak var fontTextLabel: UILabel!
@@ -70,12 +70,12 @@ class FontViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     
     @objc private func darkModeEnabled(_ notification: Notification) {
         self.darkMode = true
-        self.view.backgroundColor = BackgroundNightMode
+        self.view.backgroundColor = UIColor.KrizovaCestaSMarii.backNightColor()
     }
     
     @objc private func darkModeDisabled(_ notification: Notification) {
         self.darkMode = false
-        self.view.backgroundColor = BackgroundLightMode
+        self.view.backgroundColor = UIColor.KrizovaCestaSMarii.backLightColor()
     }
 
 }

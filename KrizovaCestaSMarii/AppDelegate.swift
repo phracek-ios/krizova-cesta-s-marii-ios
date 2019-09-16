@@ -20,8 +20,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         StationsDataService.shared.loadData()
         StabatMaterDataService.shared.loadData()
         PrayerDataService.shared.loadData()
-        UINavigationBar.appearance().barTintColor = MainColor
-        UINavigationBar.appearance().tintColor = TextNightMode
+        AboutDataService.shared.loadData()
+        UINavigationBar.appearance().barTintColor = UIColor.KrizovaCestaSMarii.mainColor()
+        UINavigationBar.appearance().tintColor = UIColor.KrizovaCestaSMarii.textNightColor()
         UINavigationBar.appearance().isTranslucent = false
         return true
     }

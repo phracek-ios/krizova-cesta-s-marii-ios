@@ -10,15 +10,23 @@ import UIKit
 import XLPagerTabStrip
 import BonMot
 
-class ChildStabatMaterViewController: UIViewController {
-    @IBOutlet weak var stabatMaterLabel: UILabel!
+class ChildStabatMaterViewController: BaseViewController {
     @IBOutlet weak var childMaterLabel: UILabel!
-    var pagerTabTitle: String?
+    fileprivate var stabatStructure: StabatMaterStructure?
     
+    var pagerTabTitle: String?
+    var pager: Int = 0
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        stabatStructure = StabatMaterDataService.shared.stabatMaterStructure
         // Do any additional setup after loading the view.
+        if pager == 0 {
+            childMaterLabel.attributedText = generateContent(text: stabatStructure!.czech)
+        }
+        else {
+            childMaterLabel.attributedText = generateContent(text: stabatStructure!.latin)
+        }
+        
     }
 }
 
