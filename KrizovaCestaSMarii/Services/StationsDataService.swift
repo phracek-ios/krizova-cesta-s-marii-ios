@@ -28,7 +28,6 @@ class StationsDataService {
                 stationsStructure = try JSONDecoder().decode(StationsStructure.self, from: data)
                 //print(stationsStructure.debugDescription)
             } catch {
-                print("Stations Structure")
                 print(error)
             }
         } else {

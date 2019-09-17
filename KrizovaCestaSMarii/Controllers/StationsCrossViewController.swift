@@ -1,20 +1,21 @@
 //
-//  StabatMaterViewController.swift
+//  StationsCrossViewController.swift
 //  KrizovaCestaSMarii
 //
-//  Created by Petr Hracek on 04/09/2019.
+//  Created by Petr Hracek on 17/09/2019.
 //  Copyright © 2019 Petr Hracek. All rights reserved.
 //
 
 import UIKit
 import XLPagerTabStrip
-import BonMot
 
-class StabatMaterViewController: ButtonBarPagerTabStripViewController {
+class StationsCrossViewController: ButtonBarPagerTabStripViewController {
 
-    fileprivate var stabatStructure: StabatMaterStructure?
+    fileprivate var stationsStructure: StationsStructure?
+    
     override func viewDidLoad() {
-        title = "Stabat Mater"
+        super.viewDidLoad()
+        title = "Křížová cesta"
         setupPagerTabBar()
         let backItem = UIBarButtonItem()
         backItem.title = ""
@@ -22,28 +23,29 @@ class StabatMaterViewController: ButtonBarPagerTabStripViewController {
         super.viewDidLoad()
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        let backItem = UIBarButtonItem()
-        backItem.title = ""
-        navigationItem.backBarButtonItem = backItem
-    }
 
     override func viewControllers(for pagerTabStripController: PagerTabStripViewController) -> [UIViewController] {
-        let czech = R.storyboard.main.childStabatMater()!
-        czech.pagerTabTitle = "Česky"
-        czech.pager = 0
-        let latin = R.storyboard.main.childStabatMater()!
-        latin.pagerTabTitle = "Latinsky"
-        latin.pager = 1
+        var controllers: [UIViewController] = []
+        
+        stationsStructure = StationsDataService.shared.stationsStructure
+        guard let stationsStructure = stationsStructure else { return [] }
 
-        return [czech, latin]
+        for i in 0..<15 {
+            let vc = R.storyboard.main.childStationsCross()!
+            let station = stationsStructure.station[i]
+            vc.pagerTabTitle = "\(station.name)".uppercased()
+            vc.pageContent = station.text
+            vc.pager = i
+            controllers.append(vc)
+        }
+        
+        return controllers
     }
 
 }
 
 // MARK: - Private
-private extension StabatMaterViewController {
+private extension StationsCrossViewController {
     func setupPagerTabBar() {
         settings.style.buttonBarBackgroundColor = UIColor.KrizovaCestaSMarii.mainColor()
         settings.style.buttonBarItemBackgroundColor = .clear

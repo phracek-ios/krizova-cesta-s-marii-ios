@@ -21,6 +21,8 @@
 		010C71FC2320534100EB3B2D /* stabat_mater.json in Resources */ = {isa = PBXBuildFile; fileRef = 010C71FA2320534100EB3B2D /* stabat_mater.json */; };
 		010C71FD2320534100EB3B2D /* cross_stations.json in Resources */ = {isa = PBXBuildFile; fileRef = 010C71FB2320534100EB3B2D /* cross_stations.json */; };
 		010C71FF23205A0800EB3B2D /* paulin_prayers.json in Resources */ = {isa = PBXBuildFile; fileRef = 010C71FE23205A0800EB3B2D /* paulin_prayers.json */; };
+		016D9CBA2330FB60005688B4 /* StationsCrossViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016D9CB92330FB60005688B4 /* StationsCrossViewController.swift */; };
+		016D9CBC2330FC34005688B4 /* ChildStationsCrossViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016D9CBB2330FC34005688B4 /* ChildStationsCrossViewController.swift */; };
 		01797175231E8BF800BB9454 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01797174231E8BF800BB9454 /* AppDelegate.swift */; };
 		0179717A231E8BF800BB9454 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01797178231E8BF800BB9454 /* Main.storyboard */; };
 		0179717C231E8BFA00BB9454 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0179717B231E8BFA00BB9454 /* Assets.xcassets */; };
@@ -81,6 +83,8 @@
 		010C71FA2320534100EB3B2D /* stabat_mater.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = stabat_mater.json; sourceTree = "<group>"; };
 		010C71FB2320534100EB3B2D /* cross_stations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cross_stations.json; sourceTree = "<group>"; };
 		010C71FE23205A0800EB3B2D /* paulin_prayers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = paulin_prayers.json; sourceTree = "<group>"; };
+		016D9CB92330FB60005688B4 /* StationsCrossViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsCrossViewController.swift; sourceTree = "<group>"; };
+		016D9CBB2330FC34005688B4 /* ChildStationsCrossViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildStationsCrossViewController.swift; sourceTree = "<group>"; };
 		01797171231E8BF800BB9454 /* KrizovaCestaSMarii.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KrizovaCestaSMarii.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01797174231E8BF800BB9454 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		01797179231E8BF800BB9454 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -164,9 +168,11 @@
 				010C71F4231FEDE600EB3B2D /* SettingsTableViewController.swift */,
 				010C71F6231FF44100EB3B2D /* FontViewController.swift */,
 				01EECA5823226BC20071732B /* ChildStabatMaterViewController.swift */,
+				016D9CBB2330FC34005688B4 /* ChildStationsCrossViewController.swift */,
 				010C71F2231FEA6700EB3B2D /* StabatMaterViewController.swift */,
 				010C71F0231FE75100EB3B2D /* AboutDaugherViewController.swift */,
 				01EECA562322535B0071732B /* AboutCrossViewController.swift */,
+				016D9CB92330FB60005688B4 /* StationsCrossViewController.swift */,
 				01026C44231E9DB900C7E52B /* MainTableViewCell.swift */,
 			);
 			path = Controllers;
@@ -503,8 +509,10 @@
 				010C71F1231FE75100EB3B2D /* AboutDaugherViewController.swift in Sources */,
 				010C71ED231FC6DE00EB3B2D /* CrossStationsMenu.swift in Sources */,
 				010C71EF231FC8C100EB3B2D /* AboutViewController.swift in Sources */,
+				016D9CBC2330FC34005688B4 /* ChildStationsCrossViewController.swift in Sources */,
 				018A0CEC232F849B001ABA82 /* About.swift in Sources */,
 				01026C45231E9DB900C7E52B /* MainTableViewCell.swift in Sources */,
+				016D9CBA2330FB60005688B4 /* StationsCrossViewController.swift in Sources */,
 				01EECA5123224CE70071732B /* StabatMaterDataService.swift in Sources */,
 				01EECA4723224AB20071732B /* Station.swift in Sources */,
 				01EECA5323224D3B0071732B /* PrayerStructure.swift in Sources */,

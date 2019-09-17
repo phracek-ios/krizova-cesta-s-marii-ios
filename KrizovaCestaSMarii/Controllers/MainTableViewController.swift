@@ -96,6 +96,9 @@ class MainTableViewController: BaseTableViewController {
         case .about_cross_stations:
             let aboutCrossStations = mainViewController.instantiateViewController(withIdentifier: "AboutCrossStation")
             navigationController?.pushViewController(aboutCrossStations, animated: true)
+        case .cross_stations:
+            let stationsCross = mainViewController.instantiateViewController(withIdentifier: "StationsCross")
+            navigationController?.pushViewController(stationsCross, animated: true)
         case .stabat_mater:
             let stabatViewController = mainViewController.instantiateViewController(withIdentifier: "StabatMater")
             navigationController?.pushViewController(stabatViewController, animated: true)
