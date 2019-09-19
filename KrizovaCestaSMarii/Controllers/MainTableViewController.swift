@@ -102,6 +102,10 @@ class MainTableViewController: BaseTableViewController {
         case .stabat_mater:
             let stabatViewController = mainViewController.instantiateViewController(withIdentifier: "StabatMater")
             navigationController?.pushViewController(stabatViewController, animated: true)
+        case .pray:
+            let view = R.storyboard.main.aboutApp()!
+            view.mode = 1
+            navigationController?.pushViewController(view, animated: true)
         case .setting:
             let settingsTableViewController = mainViewController.instantiateViewController(withIdentifier: "Settings")
             navigationController?.pushViewController(settingsTableViewController, animated: true)

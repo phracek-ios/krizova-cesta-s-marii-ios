@@ -18,10 +18,12 @@ class AboutViewController: BaseViewController {
     var darkMode: Bool = false
     var font_name: String = "Helvetica"
     var font_size: CGFloat = 16
+    var mode: Int = 0
+    fileprivate var prayStructure: PaulinPrayersStructure?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "O aplikaci"
+
         let userDefaults = UserDefaults.standard
         if let saveFontName = userDefaults.string(forKey: "FontName") {
             self.font_name = saveFontName
@@ -43,7 +45,15 @@ class AboutViewController: BaseViewController {
         }
         navigationController?.navigationBar.barStyle = UIBarStyle.black;
         aboutLabel.numberOfLines = 0
-        aboutLabel.attributedText = generateContent(text: about_text)
+        if mode == 0 {
+            title = "O aplikaci"
+            aboutLabel.attributedText = generateContent(text: about_text)
+        } else {
+            prayStructure = PaulinPrayersDataService.shared.paulinPrayersStructure
+            title = "Modlitebník"
+            aboutLabel.attributedText = generateContent(text: "\(prayStructure!.good_day)\(prayStructure!.marry_I)\(prayStructure!.marry_II)")
+        }
+
         let backItem = UIBarButtonItem()
         backItem.title = ""
         navigationItem.backBarButtonItem = backItem

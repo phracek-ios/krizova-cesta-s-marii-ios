@@ -40,7 +40,7 @@
 		01EECA452322496D0071732B /* PaylinPrayersStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EECA442322496D0071732B /* PaylinPrayersStructure.swift */; };
 		01EECA4723224AB20071732B /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EECA4623224AB20071732B /* Station.swift */; };
 		01EECA4923224AFA0071732B /* StationsStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EECA4823224AFA0071732B /* StationsStructure.swift */; };
-		01EECA4B23224B430071732B /* PaulinPrayerDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EECA4A23224B430071732B /* PaulinPrayerDataService.swift */; };
+		01EECA4B23224B430071732B /* PaulinPrayersDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EECA4A23224B430071732B /* PaulinPrayersDataService.swift */; };
 		01EECA4D23224C200071732B /* StationsDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EECA4C23224C200071732B /* StationsDataService.swift */; };
 		01EECA4F23224CA00071732B /* StabatMaterStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EECA4E23224CA00071732B /* StabatMaterStructure.swift */; };
 		01EECA5123224CE70071732B /* StabatMaterDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EECA5023224CE70071732B /* StabatMaterDataService.swift */; };
@@ -108,7 +108,7 @@
 		01EECA442322496D0071732B /* PaylinPrayersStructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PaylinPrayersStructure.swift; path = KrizovaCestaSMarii/Model/PaylinPrayersStructure.swift; sourceTree = SOURCE_ROOT; };
 		01EECA4623224AB20071732B /* Station.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
 		01EECA4823224AFA0071732B /* StationsStructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsStructure.swift; sourceTree = "<group>"; };
-		01EECA4A23224B430071732B /* PaulinPrayerDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaulinPrayerDataService.swift; sourceTree = "<group>"; };
+		01EECA4A23224B430071732B /* PaulinPrayersDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaulinPrayersDataService.swift; sourceTree = "<group>"; };
 		01EECA4C23224C200071732B /* StationsDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsDataService.swift; sourceTree = "<group>"; };
 		01EECA4E23224CA00071732B /* StabatMaterStructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StabatMaterStructure.swift; sourceTree = "<group>"; };
 		01EECA5023224CE70071732B /* StabatMaterDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StabatMaterDataService.swift; sourceTree = "<group>"; };
@@ -273,7 +273,7 @@
 		01EECA43232249130071732B /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				01EECA4A23224B430071732B /* PaulinPrayerDataService.swift */,
+				01EECA4A23224B430071732B /* PaulinPrayersDataService.swift */,
 				01EECA4C23224C200071732B /* StationsDataService.swift */,
 				01EECA5023224CE70071732B /* StabatMaterDataService.swift */,
 				01EECA5423224DC00071732B /* PrayerDataService.swift */,
@@ -529,7 +529,7 @@
 				01797175231E8BF800BB9454 /* AppDelegate.swift in Sources */,
 				01EECA572322535B0071732B /* AboutCrossViewController.swift in Sources */,
 				01EECA4D23224C200071732B /* StationsDataService.swift in Sources */,
-				01EECA4B23224B430071732B /* PaulinPrayerDataService.swift in Sources */,
+				01EECA4B23224B430071732B /* PaulinPrayersDataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
