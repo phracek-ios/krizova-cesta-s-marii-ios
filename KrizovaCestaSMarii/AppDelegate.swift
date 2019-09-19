@@ -19,7 +19,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         PaulinPrayersDataService.shared.loadData()
         StationsDataService.shared.loadData()
         StabatMaterDataService.shared.loadData()
-        PrayerDataService.shared.loadData()
         AboutDataService.shared.loadData()
         UINavigationBar.appearance().barTintColor = UIColor.KrizovaCestaSMarii.mainColor()
         UINavigationBar.appearance().tintColor = UIColor.KrizovaCestaSMarii.textNightColor()

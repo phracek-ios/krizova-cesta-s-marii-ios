@@ -14,18 +14,18 @@
 		010C71ED231FC6DE00EB3B2D /* CrossStationsMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010C71EC231FC6DE00EB3B2D /* CrossStationsMenu.swift */; };
 		010C71EF231FC8C100EB3B2D /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010C71EE231FC8C100EB3B2D /* AboutViewController.swift */; };
 		010C71F1231FE75100EB3B2D /* AboutDaugherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010C71F0231FE75100EB3B2D /* AboutDaugherViewController.swift */; };
-		010C71F3231FEA6700EB3B2D /* StabatMaterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010C71F2231FEA6700EB3B2D /* StabatMaterViewController.swift */; };
 		010C71F5231FEDE600EB3B2D /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010C71F4231FEDE600EB3B2D /* SettingsTableViewController.swift */; };
 		010C71F7231FF44100EB3B2D /* FontViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010C71F6231FF44100EB3B2D /* FontViewController.swift */; };
 		010C71F9231FF6F700EB3B2D /* GeneratorText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010C71F8231FF6F700EB3B2D /* GeneratorText.swift */; };
 		010C71FC2320534100EB3B2D /* stabat_mater.json in Resources */ = {isa = PBXBuildFile; fileRef = 010C71FA2320534100EB3B2D /* stabat_mater.json */; };
 		010C71FD2320534100EB3B2D /* cross_stations.json in Resources */ = {isa = PBXBuildFile; fileRef = 010C71FB2320534100EB3B2D /* cross_stations.json */; };
 		010C71FF23205A0800EB3B2D /* paulin_prayers.json in Resources */ = {isa = PBXBuildFile; fileRef = 010C71FE23205A0800EB3B2D /* paulin_prayers.json */; };
-		016D9CBA2330FB60005688B4 /* StationsCrossViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016D9CB92330FB60005688B4 /* StationsCrossViewController.swift */; };
-		016D9CBC2330FC34005688B4 /* ChildStationsCrossViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016D9CBB2330FC34005688B4 /* ChildStationsCrossViewController.swift */; };
+		011A766D2333B89300564C50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 011A766C2333B89300564C50 /* Assets.xcassets */; };
+		011A76862333BD7400564C50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 011A766C2333B89300564C50 /* Assets.xcassets */; };
+		016D9CBA2330FB60005688B4 /* CrossTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016D9CB92330FB60005688B4 /* CrossTabViewController.swift */; };
+		016D9CBC2330FC34005688B4 /* ChildCrossTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016D9CBB2330FC34005688B4 /* ChildCrossTabViewController.swift */; };
 		01797175231E8BF800BB9454 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01797174231E8BF800BB9454 /* AppDelegate.swift */; };
 		0179717A231E8BF800BB9454 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01797178231E8BF800BB9454 /* Main.storyboard */; };
-		0179717C231E8BFA00BB9454 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0179717B231E8BFA00BB9454 /* Assets.xcassets */; };
 		0179717F231E8BFA00BB9454 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0179717D231E8BFA00BB9454 /* LaunchScreen.storyboard */; };
 		0179718A231E8BFA00BB9454 /* KrizovaCestaSMariiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01797189231E8BFA00BB9454 /* KrizovaCestaSMariiTests.swift */; };
 		01797195231E8BFA00BB9454 /* KrizovaCestaSMariiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01797194231E8BFA00BB9454 /* KrizovaCestaSMariiUITests.swift */; };
@@ -36,7 +36,6 @@
 		019AEF1F232BA7B4004A3003 /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019AEF1E232BA7B4004A3003 /* BaseTableViewController.swift */; };
 		019AEF21232BA859004A3003 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019AEF20232BA859004A3003 /* BaseViewController.swift */; };
 		019AEF23232BAED2004A3003 /* about.json in Resources */ = {isa = PBXBuildFile; fileRef = 019AEF22232BAED2004A3003 /* about.json */; };
-		01EECA42232248C10071732B /* prayer.json in Resources */ = {isa = PBXBuildFile; fileRef = 01EECA41232248C10071732B /* prayer.json */; };
 		01EECA452322496D0071732B /* PaylinPrayersStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EECA442322496D0071732B /* PaylinPrayersStructure.swift */; };
 		01EECA4723224AB20071732B /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EECA4623224AB20071732B /* Station.swift */; };
 		01EECA4923224AFA0071732B /* StationsStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EECA4823224AFA0071732B /* StationsStructure.swift */; };
@@ -44,10 +43,7 @@
 		01EECA4D23224C200071732B /* StationsDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EECA4C23224C200071732B /* StationsDataService.swift */; };
 		01EECA4F23224CA00071732B /* StabatMaterStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EECA4E23224CA00071732B /* StabatMaterStructure.swift */; };
 		01EECA5123224CE70071732B /* StabatMaterDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EECA5023224CE70071732B /* StabatMaterDataService.swift */; };
-		01EECA5323224D3B0071732B /* PrayerStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EECA5223224D3B0071732B /* PrayerStructure.swift */; };
-		01EECA5523224DC00071732B /* PrayerDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EECA5423224DC00071732B /* PrayerDataService.swift */; };
 		01EECA572322535B0071732B /* AboutCrossViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EECA562322535B0071732B /* AboutCrossViewController.swift */; };
-		01EECA5923226BC20071732B /* ChildStabatMaterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EECA5823226BC20071732B /* ChildStabatMaterViewController.swift */; };
 		BD5E2CB66278E13D50F8DEBC /* Pods_KrizovaCestaSMarii.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41E72E99C16711F5282869E4 /* Pods_KrizovaCestaSMarii.framework */; };
 /* End PBXBuildFile section */
 
@@ -76,19 +72,18 @@
 		010C71EC231FC6DE00EB3B2D /* CrossStationsMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrossStationsMenu.swift; sourceTree = "<group>"; };
 		010C71EE231FC8C100EB3B2D /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		010C71F0231FE75100EB3B2D /* AboutDaugherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutDaugherViewController.swift; sourceTree = "<group>"; };
-		010C71F2231FEA6700EB3B2D /* StabatMaterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StabatMaterViewController.swift; sourceTree = "<group>"; };
 		010C71F4231FEDE600EB3B2D /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		010C71F6231FF44100EB3B2D /* FontViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontViewController.swift; sourceTree = "<group>"; };
 		010C71F8231FF6F700EB3B2D /* GeneratorText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GeneratorText.swift; path = "/Users/phracek/work/programming/Apple/krizova-cesta-s-marii-ios/KrizovaCestaSMarii/Utilities/GeneratorText.swift"; sourceTree = "<absolute>"; };
 		010C71FA2320534100EB3B2D /* stabat_mater.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = stabat_mater.json; sourceTree = "<group>"; };
 		010C71FB2320534100EB3B2D /* cross_stations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cross_stations.json; sourceTree = "<group>"; };
 		010C71FE23205A0800EB3B2D /* paulin_prayers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = paulin_prayers.json; sourceTree = "<group>"; };
-		016D9CB92330FB60005688B4 /* StationsCrossViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsCrossViewController.swift; sourceTree = "<group>"; };
-		016D9CBB2330FC34005688B4 /* ChildStationsCrossViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildStationsCrossViewController.swift; sourceTree = "<group>"; };
+		011A766C2333B89300564C50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = KrizovaCestaSMarii/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		016D9CB92330FB60005688B4 /* CrossTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrossTabViewController.swift; sourceTree = "<group>"; };
+		016D9CBB2330FC34005688B4 /* ChildCrossTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildCrossTabViewController.swift; sourceTree = "<group>"; };
 		01797171231E8BF800BB9454 /* KrizovaCestaSMarii.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KrizovaCestaSMarii.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01797174231E8BF800BB9454 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		01797179231E8BF800BB9454 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		0179717B231E8BFA00BB9454 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0179717E231E8BFA00BB9454 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		01797180231E8BFA00BB9454 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01797185231E8BFA00BB9454 /* KrizovaCestaSMariiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KrizovaCestaSMariiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -104,7 +99,6 @@
 		019AEF1E232BA7B4004A3003 /* BaseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
 		019AEF20232BA859004A3003 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		019AEF22232BAED2004A3003 /* about.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = about.json; sourceTree = "<group>"; };
-		01EECA41232248C10071732B /* prayer.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = prayer.json; sourceTree = "<group>"; };
 		01EECA442322496D0071732B /* PaylinPrayersStructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PaylinPrayersStructure.swift; path = KrizovaCestaSMarii/Model/PaylinPrayersStructure.swift; sourceTree = SOURCE_ROOT; };
 		01EECA4623224AB20071732B /* Station.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
 		01EECA4823224AFA0071732B /* StationsStructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsStructure.swift; sourceTree = "<group>"; };
@@ -112,10 +106,7 @@
 		01EECA4C23224C200071732B /* StationsDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsDataService.swift; sourceTree = "<group>"; };
 		01EECA4E23224CA00071732B /* StabatMaterStructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StabatMaterStructure.swift; sourceTree = "<group>"; };
 		01EECA5023224CE70071732B /* StabatMaterDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StabatMaterDataService.swift; sourceTree = "<group>"; };
-		01EECA5223224D3B0071732B /* PrayerStructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerStructure.swift; sourceTree = "<group>"; };
-		01EECA5423224DC00071732B /* PrayerDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerDataService.swift; sourceTree = "<group>"; };
 		01EECA562322535B0071732B /* AboutCrossViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutCrossViewController.swift; sourceTree = "<group>"; };
-		01EECA5823226BC20071732B /* ChildStabatMaterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildStabatMaterViewController.swift; sourceTree = "<group>"; };
 		41E72E99C16711F5282869E4 /* Pods_KrizovaCestaSMarii.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KrizovaCestaSMarii.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B76E0668A9972040FED693C /* Pods-KrizovaCestaSMarii.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KrizovaCestaSMarii.release.xcconfig"; path = "Target Support Files/Pods-KrizovaCestaSMarii/Pods-KrizovaCestaSMarii.release.xcconfig"; sourceTree = "<group>"; };
 		9ABF6771C82E4D2432B97E7D /* Pods-KrizovaCestaSMarii.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KrizovaCestaSMarii.debug.xcconfig"; path = "Target Support Files/Pods-KrizovaCestaSMarii/Pods-KrizovaCestaSMarii.debug.xcconfig"; sourceTree = "<group>"; };
@@ -150,7 +141,6 @@
 		01026C46231E9F9B00C7E52B /* SupportFiles */ = {
 			isa = PBXGroup;
 			children = (
-				01EECA41232248C10071732B /* prayer.json */,
 				010C71FB2320534100EB3B2D /* cross_stations.json */,
 				010C71FA2320534100EB3B2D /* stabat_mater.json */,
 				010C71FE23205A0800EB3B2D /* paulin_prayers.json */,
@@ -167,12 +157,10 @@
 				010C71EE231FC8C100EB3B2D /* AboutViewController.swift */,
 				010C71F4231FEDE600EB3B2D /* SettingsTableViewController.swift */,
 				010C71F6231FF44100EB3B2D /* FontViewController.swift */,
-				01EECA5823226BC20071732B /* ChildStabatMaterViewController.swift */,
-				016D9CBB2330FC34005688B4 /* ChildStationsCrossViewController.swift */,
-				010C71F2231FEA6700EB3B2D /* StabatMaterViewController.swift */,
+				016D9CBB2330FC34005688B4 /* ChildCrossTabViewController.swift */,
 				010C71F0231FE75100EB3B2D /* AboutDaugherViewController.swift */,
 				01EECA562322535B0071732B /* AboutCrossViewController.swift */,
-				016D9CB92330FB60005688B4 /* StationsCrossViewController.swift */,
+				016D9CB92330FB60005688B4 /* CrossTabViewController.swift */,
 				01026C44231E9DB900C7E52B /* MainTableViewCell.swift */,
 			);
 			path = Controllers;
@@ -185,7 +173,6 @@
 				01EECA4623224AB20071732B /* Station.swift */,
 				01EECA4823224AFA0071732B /* StationsStructure.swift */,
 				01EECA4E23224CA00071732B /* StabatMaterStructure.swift */,
-				01EECA5223224D3B0071732B /* PrayerStructure.swift */,
 				018A0CEB232F849B001ABA82 /* About.swift */,
 			);
 			path = Model;
@@ -235,8 +222,8 @@
 				01026C47231E9FA300C7E52B /* Controllers */,
 				01026C46231E9F9B00C7E52B /* SupportFiles */,
 				01797174231E8BF800BB9454 /* AppDelegate.swift */,
+				011A766C2333B89300564C50 /* Assets.xcassets */,
 				01797178231E8BF800BB9454 /* Main.storyboard */,
-				0179717B231E8BFA00BB9454 /* Assets.xcassets */,
 				0179717D231E8BFA00BB9454 /* LaunchScreen.storyboard */,
 				01797180231E8BFA00BB9454 /* Info.plist */,
 			);
@@ -276,7 +263,6 @@
 				01EECA4A23224B430071732B /* PaulinPrayersDataService.swift */,
 				01EECA4C23224C200071732B /* StationsDataService.swift */,
 				01EECA5023224CE70071732B /* StabatMaterDataService.swift */,
-				01EECA5423224DC00071732B /* PrayerDataService.swift */,
 				018A0CED232F8538001ABA82 /* AboutDataService.swift */,
 			);
 			path = Services;
@@ -406,13 +392,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01EECA42232248C10071732B /* prayer.json in Resources */,
+				011A76862333BD7400564C50 /* Assets.xcassets in Resources */,
 				010C71FC2320534100EB3B2D /* stabat_mater.json in Resources */,
 				010C71FF23205A0800EB3B2D /* paulin_prayers.json in Resources */,
 				010C71FD2320534100EB3B2D /* cross_stations.json in Resources */,
 				0179717F231E8BFA00BB9454 /* LaunchScreen.storyboard in Resources */,
 				019AEF23232BAED2004A3003 /* about.json in Resources */,
-				0179717C231E8BFA00BB9454 /* Assets.xcassets in Resources */,
 				0179717A231E8BF800BB9454 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -421,6 +406,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				011A766D2333B89300564C50 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -499,7 +485,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01EECA5523224DC00071732B /* PrayerDataService.swift in Sources */,
 				01026C43231E9DA000C7E52B /* MainTableViewController.swift in Sources */,
 				019AEF1F232BA7B4004A3003 /* BaseTableViewController.swift in Sources */,
 				017BDA742327D3A00019E672 /* R.generated.swift in Sources */,
@@ -509,21 +494,18 @@
 				010C71F1231FE75100EB3B2D /* AboutDaugherViewController.swift in Sources */,
 				010C71ED231FC6DE00EB3B2D /* CrossStationsMenu.swift in Sources */,
 				010C71EF231FC8C100EB3B2D /* AboutViewController.swift in Sources */,
-				016D9CBC2330FC34005688B4 /* ChildStationsCrossViewController.swift in Sources */,
+				016D9CBC2330FC34005688B4 /* ChildCrossTabViewController.swift in Sources */,
 				018A0CEC232F849B001ABA82 /* About.swift in Sources */,
 				01026C45231E9DB900C7E52B /* MainTableViewCell.swift in Sources */,
-				016D9CBA2330FB60005688B4 /* StationsCrossViewController.swift in Sources */,
+				016D9CBA2330FB60005688B4 /* CrossTabViewController.swift in Sources */,
 				01EECA5123224CE70071732B /* StabatMaterDataService.swift in Sources */,
 				01EECA4723224AB20071732B /* Station.swift in Sources */,
-				01EECA5323224D3B0071732B /* PrayerStructure.swift in Sources */,
-				01EECA5923226BC20071732B /* ChildStabatMaterViewController.swift in Sources */,
 				010C71F5231FEDE600EB3B2D /* SettingsTableViewController.swift in Sources */,
 				010C71E9231FA6D000EB3B2D /* CrossColors.swift in Sources */,
 				01EECA4923224AFA0071732B /* StationsStructure.swift in Sources */,
 				01EECA4F23224CA00071732B /* StabatMaterStructure.swift in Sources */,
 				019AEF1C232B8F34004A3003 /* Styles.swift in Sources */,
 				01EECA452322496D0071732B /* PaylinPrayersStructure.swift in Sources */,
-				010C71F3231FEA6700EB3B2D /* StabatMaterViewController.swift in Sources */,
 				010C71F7231FF44100EB3B2D /* FontViewController.swift in Sources */,
 				010C71F9231FF6F700EB3B2D /* GeneratorText.swift in Sources */,
 				01797175231E8BF800BB9454 /* AppDelegate.swift in Sources */,
@@ -715,7 +697,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.phracek.KrizovaCestaSMarii;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -735,7 +717,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.phracek.KrizovaCestaSMarii;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

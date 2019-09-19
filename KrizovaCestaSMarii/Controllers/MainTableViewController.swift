@@ -97,11 +97,13 @@ class MainTableViewController: BaseTableViewController {
             let aboutCrossStations = mainViewController.instantiateViewController(withIdentifier: "AboutCrossStation")
             navigationController?.pushViewController(aboutCrossStations, animated: true)
         case .cross_stations:
-            let stationsCross = mainViewController.instantiateViewController(withIdentifier: "StationsCross")
-            navigationController?.pushViewController(stationsCross, animated: true)
+            let tabView = R.storyboard.main.crossTab()!
+            tabView.mode = 0
+            navigationController?.pushViewController(tabView, animated: true)
         case .stabat_mater:
-            let stabatViewController = mainViewController.instantiateViewController(withIdentifier: "StabatMater")
-            navigationController?.pushViewController(stabatViewController, animated: true)
+            let tabView = R.storyboard.main.crossTab()!
+            tabView.mode = 1
+            navigationController?.pushViewController(tabView, animated: true)
         case .pray:
             let view = R.storyboard.main.aboutApp()!
             view.mode = 1

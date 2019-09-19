@@ -173,99 +173,6 @@
             </objects>
             <point key="canvasLocation" x="2293.5999999999999" y="-671.51424287856082"/>
         </scene>
-        <!--Stabat Mater View Controller-->
-        <scene sceneID="HdW-eK-5mw">
-            <objects>
-                <viewController storyboardIdentifier="StabatMater" id="Pkm-OQ-60i" customClass="StabatMaterViewController" customModule="KrizovaCestaSMarii" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="i0z-0u-lrR">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q0s-nk-xWV">
-                                <rect key="frame" x="0.0" y="10" width="375" height="657"/>
-                            </scrollView>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="WhQ-yS-8O7" customClass="ButtonBarView" customModule="XLPagerTabStrip">
-                                <rect key="frame" x="0.0" y="64" width="375" height="54"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="54" id="nzr-D3-Wi9"/>
-                                </constraints>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="dCC-ad-C7W">
-                                    <size key="itemSize" width="45" height="45"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells/>
-                            </collectionView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="z4O-nR-vX0" firstAttribute="trailing" secondItem="q0s-nk-xWV" secondAttribute="trailing" id="GOp-Z7-9RI"/>
-                            <constraint firstItem="q0s-nk-xWV" firstAttribute="leading" secondItem="z4O-nR-vX0" secondAttribute="leading" id="JBZ-XM-qSE"/>
-                            <constraint firstItem="z4O-nR-vX0" firstAttribute="top" secondItem="q0s-nk-xWV" secondAttribute="top" constant="54" id="Tk1-eL-hUH"/>
-                            <constraint firstItem="z4O-nR-vX0" firstAttribute="bottom" secondItem="q0s-nk-xWV" secondAttribute="bottom" id="dpd-14-ocT"/>
-                            <constraint firstItem="WhQ-yS-8O7" firstAttribute="leading" secondItem="z4O-nR-vX0" secondAttribute="leading" id="rTt-fP-bzI"/>
-                            <constraint firstItem="z4O-nR-vX0" firstAttribute="trailing" secondItem="WhQ-yS-8O7" secondAttribute="trailing" id="utj-K9-zKK"/>
-                            <constraint firstItem="WhQ-yS-8O7" firstAttribute="top" secondItem="z4O-nR-vX0" secondAttribute="top" id="yrE-dX-Ae6"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="z4O-nR-vX0"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="VvR-4w-n63">
-                        <barButtonItem key="backBarButtonItem" title="&quot;&quot;" id="lkv-UA-b3a"/>
-                    </navigationItem>
-                    <connections>
-                        <outlet property="buttonBarView" destination="WhQ-yS-8O7" id="5mp-Ba-RLf"/>
-                        <outlet property="containerView" destination="q0s-nk-xWV" id="WTM-JO-X5y"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Mv0-9W-aIf" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4226.3999999999996" y="83.208395802098963"/>
-        </scene>
-        <!--Child Stabat Mater View Controller-->
-        <scene sceneID="AjT-qh-9yA">
-            <objects>
-                <viewController storyboardIdentifier="ChildStabatMater" id="KIw-eM-vxE" customClass="ChildStabatMaterViewController" customModule="KrizovaCestaSMarii" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="5uT-wE-UaR">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hb0-vH-wbM">
-                                <rect key="frame" x="0.0" y="80" width="375" height="587"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Czech" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HNo-Cp-wzQ">
-                                        <rect key="frame" x="20" y="80" width="48.5" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="HNo-Cp-wzQ" secondAttribute="trailing" constant="20" id="9Mm-8e-Oa1"/>
-                                    <constraint firstItem="HNo-Cp-wzQ" firstAttribute="leading" secondItem="hb0-vH-wbM" secondAttribute="leading" constant="20" id="WDG-LI-b3Q"/>
-                                    <constraint firstAttribute="bottom" secondItem="HNo-Cp-wzQ" secondAttribute="bottom" constant="20" id="j2Z-3I-z4T"/>
-                                    <constraint firstItem="HNo-Cp-wzQ" firstAttribute="top" secondItem="hb0-vH-wbM" secondAttribute="top" constant="80" id="xCP-3P-xUM"/>
-                                </constraints>
-                            </scrollView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="hb0-vH-wbM" firstAttribute="leading" secondItem="BcI-Vs-cPx" secondAttribute="leading" id="6Vx-PW-0dM"/>
-                            <constraint firstItem="BcI-Vs-cPx" firstAttribute="trailing" secondItem="hb0-vH-wbM" secondAttribute="trailing" id="CTv-k1-lY4"/>
-                            <constraint firstItem="BcI-Vs-cPx" firstAttribute="bottom" secondItem="hb0-vH-wbM" secondAttribute="bottom" id="eu3-9u-Zdc"/>
-                            <constraint firstItem="hb0-vH-wbM" firstAttribute="top" secondItem="BcI-Vs-cPx" secondAttribute="top" constant="60" id="osd-PE-fsS"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="BcI-Vs-cPx"/>
-                    </view>
-                    <connections>
-                        <outlet property="childMaterLabel" destination="HNo-Cp-wzQ" id="0Fw-Hf-2HL"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zPR-S2-fDP" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="5024.8000000000002" y="82.3088455772114"/>
-        </scene>
         <!--About Daugher View Controller-->
         <scene sceneID="Cwr-1Q-YBh">
             <objects>
@@ -331,10 +238,10 @@
             </objects>
             <point key="canvasLocation" x="3951.1999999999998" y="881.10944527736137"/>
         </scene>
-        <!--Stations Cross View Controller-->
+        <!--Cross Tab View Controller-->
         <scene sceneID="kDt-cy-st1">
             <objects>
-                <viewController storyboardIdentifier="StationsCross" id="7bM-xg-aZr" customClass="StationsCrossViewController" customModule="KrizovaCestaSMarii" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CrossTab" id="7bM-xg-aZr" customClass="CrossTabViewController" customModule="KrizovaCestaSMarii" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zVy-EX-17J">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -379,10 +286,10 @@
             </objects>
             <point key="canvasLocation" x="6343.1999999999998" y="900.00000000000011"/>
         </scene>
-        <!--Child Stations Cross View Controller-->
+        <!--Child Cross Tab View Controller-->
         <scene sceneID="7jG-gb-CTI">
             <objects>
-                <viewController storyboardIdentifier="ChildStationsCross" id="78q-0a-hUT" customClass="ChildStationsCrossViewController" customModule="KrizovaCestaSMarii" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ChildCrossTab" id="78q-0a-hUT" customClass="ChildCrossTabViewController" customModule="KrizovaCestaSMarii" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8d0-T5-o0X">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -578,6 +485,56 @@
                                             <segue destination="meY-at-Dh3" kind="show" identifier="FontSettings" id="ltV-ei-BJG"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="wbX-L3-lZR">
+                                        <rect key="frame" x="0.0" y="160" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wbX-L3-lZR" id="0P8-ih-TpT">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zobrazovat invokaci k Panně Marii" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sI5-cA-j9S">
+                                                    <rect key="frame" x="15" y="5" width="259.5" height="33.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sMa-pp-DgO">
+                                                    <rect key="frame" x="310" y="6" width="49" height="31"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </switch>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="sI5-cA-j9S" secondAttribute="bottom" constant="5" id="1bp-tl-VZT"/>
+                                                <constraint firstItem="sI5-cA-j9S" firstAttribute="leading" secondItem="0P8-ih-TpT" secondAttribute="leading" constant="15" id="g58-aN-ROU"/>
+                                                <constraint firstItem="sI5-cA-j9S" firstAttribute="top" secondItem="0P8-ih-TpT" secondAttribute="top" constant="5" id="gXj-jx-W4F"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="LI7-PK-FXk">
+                                        <rect key="frame" x="0.0" y="204" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LI7-PK-FXk" id="6YP-TD-3gc">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zobrazovat invokaci k Ježíši" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IYP-ck-iEP">
+                                                    <rect key="frame" x="15" y="5" width="213.5" height="33.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kHy-tf-Bvh">
+                                                    <rect key="frame" x="310" y="6" width="49" height="31"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </switch>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="IYP-ck-iEP" secondAttribute="bottom" constant="5" id="6Y3-bD-Nee"/>
+                                                <constraint firstItem="IYP-ck-iEP" firstAttribute="leading" secondItem="6YP-TD-3gc" secondAttribute="leading" constant="15" id="FQk-b6-tcs"/>
+                                                <constraint firstItem="IYP-ck-iEP" firstAttribute="top" secondItem="6YP-TD-3gc" secondAttribute="top" constant="5" id="nfd-fR-8Tg"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -663,9 +620,6 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="Pkm-OQ-60i" kind="relationship" relationship="rootViewController" id="POy-VJ-d6T"/>
-                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gyj-oH-c8J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

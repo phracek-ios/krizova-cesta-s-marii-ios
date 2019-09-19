@@ -1,5 +1,5 @@
 //
-//  StationsCrossViewController.swift
+//  CrossTabViewController.swift
 //  KrizovaCestaSMarii
 //
 //  Created by Petr Hracek on 17/09/2019.
@@ -9,13 +9,17 @@
 import UIKit
 import XLPagerTabStrip
 
-class StationsCrossViewController: ButtonBarPagerTabStripViewController {
+class CrossTabViewController: ButtonBarPagerTabStripViewController {
 
     fileprivate var stationsStructure: StationsStructure?
-    
+    var mode: Int = 0
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Křížová cesta"
+        if mode == 0 {
+            title = "Křížová cesta"
+        } else {
+            title = "Stabat Mater"
+        }
         setupPagerTabBar()
         let backItem = UIBarButtonItem()
         backItem.title = ""
@@ -30,13 +34,27 @@ class StationsCrossViewController: ButtonBarPagerTabStripViewController {
         stationsStructure = StationsDataService.shared.stationsStructure
         guard let stationsStructure = stationsStructure else { return [] }
 
-        for i in 0..<15 {
-            let vc = R.storyboard.main.childStationsCross()!
-            let station = stationsStructure.station[i]
-            vc.pagerTabTitle = "\(station.name)".uppercased()
-            vc.pageContent = station.text
-            vc.pager = i
-            controllers.append(vc)
+        if mode == 0 {
+            for i in 0..<16 {
+                let vc = R.storyboard.main.childCrossTab()!
+                let station = stationsStructure.station[i]
+                vc.pagerTabTitle = "\(station.name)".uppercased()
+                vc.pageContent = station.text
+                vc.pager = i
+                vc.mode = 0
+                controllers.append(vc)
+            }
+        } else {
+            let czech = R.storyboard.main.childCrossTab()!
+            czech.pagerTabTitle = "Česky"
+            czech.pager = 0
+            czech.mode = 1
+            let latin = R.storyboard.main.childCrossTab()!
+            latin.pagerTabTitle = "Latinsky"
+            latin.pager = 1
+            latin.mode = 1
+            controllers.append(czech)
+            controllers.append(latin)
         }
         
         return controllers
@@ -45,7 +63,7 @@ class StationsCrossViewController: ButtonBarPagerTabStripViewController {
 }
 
 // MARK: - Private
-private extension StationsCrossViewController {
+private extension CrossTabViewController {
     func setupPagerTabBar() {
         settings.style.buttonBarBackgroundColor = UIColor.KrizovaCestaSMarii.mainColor()
         settings.style.buttonBarItemBackgroundColor = .clear

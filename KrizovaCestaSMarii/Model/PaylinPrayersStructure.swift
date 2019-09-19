@@ -12,4 +12,6 @@ struct PaulinPrayersStructure: Decodable {
     var good_day: String
     var marry_I: String
     var marry_II: String
+    var invocationMarry: String
+    var invocationJesus: String
 }
