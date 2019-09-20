@@ -19,6 +19,12 @@ class SettingsTableViewController: BaseTableViewController {
     @IBOutlet weak var nightSwitchCell: UITableViewCell!
     @IBOutlet weak var dimOffSwitchCell: UITableViewCell!
     @IBOutlet weak var fontCell: UITableViewCell!
+    @IBOutlet weak var invocationMarryCell: UITableViewCell!
+    @IBOutlet weak var invocationMarryLabel: UILabel!
+    @IBOutlet weak var invocationMarrySwitch: UISwitch!
+    @IBOutlet weak var invocationJesusCell: UITableViewCell!
+    @IBOutlet weak var invocationJesusLabel: UILabel!
+    @IBOutlet weak var invocationJesusSwitch: UISwitch!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,6 +39,8 @@ class SettingsTableViewController: BaseTableViewController {
             disabledDark()
         }
         dimOffSwitch.isOn = userDefaults.bool(forKey: "DimmScreen")
+        invocationMarrySwitch.isOn = userDefaults.bool(forKey: "InvocationMarry")
+        invocationJesusSwitch.isOn = userDefaults.bool(forKey: "InvocationJesus")
         set_font_text()
         navigationController?.navigationBar.barStyle = UIBarStyle.black;
     }
@@ -83,6 +91,26 @@ class SettingsTableViewController: BaseTableViewController {
         }
     }
     
+    @IBAction func funcInvocationMarry(_ sender: Any) {
+        let userDefaults = UserDefaults.standard
+        if invocationMarrySwitch.isOn == true {
+            userDefaults.set(true, forKey: "InvocationMarry")
+        }
+        else {
+            userDefaults.set(false, forKey: "InvocationMarry")
+        }
+    }
+
+    @IBAction func funcInvocationJesus(_ sender: Any) {
+        let userDefaults = UserDefaults.standard
+        if invocationJesusSwitch.isOn == true {
+            userDefaults.set(true, forKey: "InvocationJesus")
+        }
+        else {
+            userDefaults.set(false, forKey: "InvocationJesus")
+        }
+    }
+    
     private func set_font_text() {
         let userDefaults = UserDefaults.standard
         var font_name = userDefaults.string(forKey: "FontName")
@@ -109,7 +137,12 @@ class SettingsTableViewController: BaseTableViewController {
         self.fontCaptionLabel.backgroundColor = UIColor.KrizovaCestaSMarii.backNightColor()
         self.fontName.backgroundColor = UIColor.KrizovaCestaSMarii.backNightColor()
         self.fontName.textColor = UIColor.KrizovaCestaSMarii.textNightColor()
-        //self.FullScreenLabel.textColor = UIColor.white
+        self.invocationMarryCell.backgroundColor = UIColor.KrizovaCestaSMarii.backNightColor()
+        self.invocationMarryLabel.textColor = UIColor.KrizovaCestaSMarii.textNightColor()
+        self.invocationMarrySwitch.backgroundColor = UIColor.KrizovaCestaSMarii.backNightColor()
+        self.invocationJesusCell.backgroundColor = UIColor.KrizovaCestaSMarii.backNightColor()
+        self.invocationJesusLabel.textColor = UIColor.KrizovaCestaSMarii.textNightColor()
+        self.invocationJesusSwitch.backgroundColor = UIColor.KrizovaCestaSMarii.backNightColor()
     }
     
     func disabledDark() {
@@ -125,7 +158,12 @@ class SettingsTableViewController: BaseTableViewController {
         self.fontCaptionLabel.textColor = UIColor.KrizovaCestaSMarii.textLightColor()
         self.fontName.backgroundColor = UIColor.KrizovaCestaSMarii.backLightColor()
         self.fontName.textColor = UIColor.KrizovaCestaSMarii.textLightColor()
-        //self.FullScreenLabel.textColor = UIColor.black
+        self.invocationMarryCell.backgroundColor = UIColor.KrizovaCestaSMarii.backLightColor()
+        self.invocationMarryLabel.textColor = UIColor.KrizovaCestaSMarii.textLightColor()
+        self.invocationMarrySwitch.backgroundColor = UIColor.KrizovaCestaSMarii.backLightColor()
+        self.invocationJesusCell.backgroundColor = UIColor.KrizovaCestaSMarii.backLightColor()
+        self.invocationJesusLabel.textColor = UIColor.KrizovaCestaSMarii.textLightColor()
+        self.invocationJesusSwitch.backgroundColor = UIColor.KrizovaCestaSMarii.backLightColor()
     }
 
 }

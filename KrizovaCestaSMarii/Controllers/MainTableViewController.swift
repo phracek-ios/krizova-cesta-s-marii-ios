@@ -117,8 +117,6 @@ class MainTableViewController: BaseTableViewController {
         case .about_daughters:
             let stabatViewController = mainViewController.instantiateViewController(withIdentifier: "AboutDaughters")
             navigationController?.pushViewController(stabatViewController, animated: true)
-        default:
-            fatalError("Unexpected raw")
         }
     }
     

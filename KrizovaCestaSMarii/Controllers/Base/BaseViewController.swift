@@ -16,9 +16,8 @@ class BaseViewController: UIViewController {
     }
     
     func setupNoTitleBackButton() {
-        print("setup No")
         let backItem = UIBarButtonItem()
         backItem.title = ""
-        navigationItem.backBarButtonItem = backItem
+        self.navigationController?.navigationBar.topItem?.backBarButtonItem = backItem
     }
 }

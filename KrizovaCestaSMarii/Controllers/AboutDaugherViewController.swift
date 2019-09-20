@@ -50,17 +50,23 @@ class AboutDaugherViewController: BaseViewController, TTTAttributedLabelDelegate
         }
         let text =  "\(aboutStructure.about_daughters_1)\(paulin_email)<br>\(paulin_web_cz)<br>\(paulin_web_org)</p>\(aboutStructure.about_daughters_2)\(paulin_watch)</p>\(aboutStructure.about_daughters_3)\(paulin_adore_text)</p><br>"
         self.darkMode = userDefaults.bool(forKey: "NightSwitch")
+        var textColor = UIColor.KrizovaCestaSMarii.textLightColor()
         if self.darkMode {
             self.view.backgroundColor = UIColor.KrizovaCestaSMarii.backNightColor()
+            self.contentView.backgroundColor = UIColor.KrizovaCestaSMarii.backNightColor()
             aboutLabel.backgroundColor = UIColor.KrizovaCestaSMarii.backNightColor()
+            aboutLabel.textColor = UIColor.KrizovaCestaSMarii.textNightColor()
+            textColor = UIColor.KrizovaCestaSMarii.textNightColor()
         } else {
             self.view.backgroundColor = UIColor.KrizovaCestaSMarii.backLightColor()
+            self.contentView.backgroundColor = UIColor.KrizovaCestaSMarii.backLightColor()
             aboutLabel.backgroundColor = UIColor.KrizovaCestaSMarii.backLightColor()
+            aboutLabel.textColor = UIColor.KrizovaCestaSMarii.textLightColor()
         }
         aboutLabel.numberOfLines = 0
         aboutLabel.delegate = self
         var numberWords = 0
-        aboutLabel.attributedText = generateContent(text: text)
+        aboutLabel.setText(generateContent(text: text, color: textColor))
         aboutLabel.addLink(to: URL(string: paulin_email), with: NSRange(location: aboutStructure.about_daughters_1.count - 45, length: paulin_email.count))
         numberWords += aboutStructure.about_daughters_1.count - 45 + paulin_email.count
         aboutLabel.addLink(to: URL(string: paulin_web_cz), with: NSRange(location: numberWords, length: paulin_web_cz.count))

@@ -13,7 +13,7 @@ class AboutViewController: BaseViewController {
     let about_text: String = "<p>Křížová cesta s Marií<br><br>Offline mobilní verze pro iOS.</p><p>Autor mobilní aplikace: Petr Hráček</p><br><br><p>Případné chyby, připomínky, nápady či postřehy prosím pište na adresu phracek@gmail.com.</p>"
     
     @IBOutlet weak var aboutLabel: UILabel!
-    @IBOutlet var contentView: UIView!
+    @IBOutlet weak var contentView: UIView!
     
     var darkMode: Bool = false
     var font_name: String = "Helvetica"
@@ -38,12 +38,7 @@ class AboutViewController: BaseViewController {
             self.font_size = 16
         }
         self.darkMode = userDefaults.bool(forKey: "NightSwitch")
-        if self.darkMode {
-            darkModeEnabled()
-        } else {
-            darkModeDisabled()
-        }
-        navigationController?.navigationBar.barStyle = UIBarStyle.black;
+
         aboutLabel.numberOfLines = 0
         if mode == 0 {
             title = "O aplikaci"
@@ -53,17 +48,28 @@ class AboutViewController: BaseViewController {
             title = "Modlitebník"
             aboutLabel.attributedText = generateContent(text: "\(prayStructure!.good_day)\(prayStructure!.marry_I)\(prayStructure!.marry_II)")
         }
+        if self.darkMode {
+            self.view.backgroundColor = UIColor.KrizovaCestaSMarii.backNightColor()
+            self.contentView.backgroundColor = UIColor.KrizovaCestaSMarii.backNightColor()
+            self.aboutLabel.backgroundColor = UIColor.KrizovaCestaSMarii.backNightColor()
+            self.aboutLabel.textColor = UIColor.KrizovaCestaSMarii.textNightColor()
+        } else {
+            self.view.backgroundColor = UIColor.KrizovaCestaSMarii.backLightColor()
+            self.contentView.backgroundColor = UIColor.KrizovaCestaSMarii.backLightColor()
+            self.aboutLabel.backgroundColor = UIColor.KrizovaCestaSMarii.backLightColor()
+            self.aboutLabel.textColor = UIColor.KrizovaCestaSMarii.textLightColor()
+        }
+        NotificationCenter.default.addObserver(self, selector: #selector(darkModeEnabled(_:)), name: .darkModeEnabled, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(darkModeDisabled(_:)), name: .darkModeDisabled, object: nil)
+        navigationController?.navigationBar.barStyle = UIBarStyle.black;
 
-        let backItem = UIBarButtonItem()
-        backItem.title = ""
-        navigationItem.backBarButtonItem = backItem
     }
     deinit {
         NotificationCenter.default.removeObserver(self, name: .darkModeEnabled, object: nil)
         NotificationCenter.default.removeObserver(self, name: .darkModeDisabled, object: nil)
     }
     
-    func darkModeEnabled() {
+    @objc private func darkModeEnabled(_ notification: Notification) {
         self.darkMode = true
         self.view.backgroundColor = UIColor.KrizovaCestaSMarii.backNightColor()
         self.contentView.backgroundColor = UIColor.KrizovaCestaSMarii.backNightColor()
@@ -71,7 +77,7 @@ class AboutViewController: BaseViewController {
         self.aboutLabel.textColor = UIColor.KrizovaCestaSMarii.textNightColor()
     }
     
-    func darkModeDisabled() {
+    @objc private func darkModeDisabled(_ notification: Notification) {
         self.darkMode = false
         self.view.backgroundColor = UIColor.KrizovaCestaSMarii.backLightColor()
         self.contentView.backgroundColor = UIColor.KrizovaCestaSMarii.backLightColor()

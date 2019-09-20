@@ -40,6 +40,17 @@ class FontViewController: BaseViewController, UIPickerViewDelegate, UIPickerView
         if fontSize == nil {
             fontSize = "14"
         }
+        if darkMode == true {
+            self.view.backgroundColor = UIColor.KrizovaCestaSMarii.backNightColor()
+            self.fontNamePickerView.backgroundColor = UIColor.KrizovaCestaSMarii.backNightColor()
+            self.fontTextLabel.backgroundColor = UIColor.KrizovaCestaSMarii.backNightColor()
+            self.fontTextLabel.textColor = UIColor.KrizovaCestaSMarii.textNightColor()
+        } else {
+            self.view.backgroundColor = UIColor.KrizovaCestaSMarii.backLightColor()
+            self.fontNamePickerView.backgroundColor = UIColor.KrizovaCestaSMarii.backLightColor()
+            self.fontTextLabel.backgroundColor = UIColor.KrizovaCestaSMarii.backLightColor()
+            self.fontTextLabel.textColor = UIColor.KrizovaCestaSMarii.textLightColor()
+        }
         fontTextLabel.attributedText = generateContent(text: example_text)
         self.fontNamePickerView.selectRow(fontNames.firstIndex(of: fontName!)!, inComponent: 0, animated: true)
         self.fontNamePickerView.selectRow(fontSizes.firstIndex(of: fontSize!)!, inComponent: 1, animated: true)
@@ -53,8 +64,12 @@ class FontViewController: BaseViewController, UIPickerViewDelegate, UIPickerView
         return self.pickerData[component].count
     }
     
-    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return self.pickerData[component][row]
+    func pickerView(_ pickerView: UIPickerView, attributedTitleForRow row: Int, forComponent component: Int) -> NSAttributedString? {
+        var attributes = [NSAttributedString.Key.foregroundColor: UIColor.KrizovaCestaSMarii.textLightColor()]
+        if self.darkMode == true {
+            attributes = [NSAttributedString.Key.foregroundColor: UIColor.KrizovaCestaSMarii.textNightColor()]
+        }
+        return NSAttributedString(string: self.pickerData[component][row], attributes: attributes)
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
@@ -68,14 +83,4 @@ class FontViewController: BaseViewController, UIPickerViewDelegate, UIPickerView
         userDefaults.set(fontName, forKey: "FontName")
     }
     
-    @objc private func darkModeEnabled(_ notification: Notification) {
-        self.darkMode = true
-        self.view.backgroundColor = UIColor.KrizovaCestaSMarii.backNightColor()
-    }
-    
-    @objc private func darkModeDisabled(_ notification: Notification) {
-        self.darkMode = false
-        self.view.backgroundColor = UIColor.KrizovaCestaSMarii.backLightColor()
-    }
-
 }

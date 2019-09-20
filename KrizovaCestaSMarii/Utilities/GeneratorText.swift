@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 import BonMot
 
-func generateContent(text: String, font_name: String = "Helvetica", size: CGFloat = 16) -> NSAttributedString {
+func generateContent(text: String, font_name: String = "Helvetica", size: CGFloat = 16, color: UIColor = UIColor.darkGray ) -> NSAttributedString {
     
     let baseStyle = StringStyle(
         .font(UIFont(name: font_name, size: size)!),
@@ -42,7 +42,7 @@ func generateContent(text: String, font_name: String = "Helvetica", size: CGFloa
     ]
     
     let content = baseStyle.byAdding(
-        .color(UIColor.darkGray),
+        .color(color),
         .xmlRules(rules)
     )
     var generated_text = text

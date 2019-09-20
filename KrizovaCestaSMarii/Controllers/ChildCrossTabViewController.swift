@@ -15,16 +15,32 @@ class ChildCrossTabViewController: BaseViewController {
     @IBOutlet weak var childLabel: UILabel!
     @IBOutlet weak var contentView: UIView!
     fileprivate var stabatStructure: StabatMaterStructure?
+    fileprivate var paulinStructure: PaulinPrayersStructure?
+    
     var pagerTabTitle: String?
     var pageContent: String = ""
     var pager: Int = 0
     var mode: Int = 0
-
+    var darkMode: Bool = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         stabatStructure = StabatMaterDataService.shared.stabatMaterStructure
+        paulinStructure = PaulinPrayersDataService.shared.paulinPrayersStructure
+        let userDefaults = UserDefaults.standard
+        self.darkMode = userDefaults.bool(forKey: "NightSwitch")
+        
         if mode == 0 {
-            childLabel.attributedText = generateContent(text: pageContent)
+            let userDefaults = UserDefaults.standard
+            var invocationMarry: String = ""
+            var invocationJesus: String = ""
+            if userDefaults.bool(forKey: "InvocationMarry") == true {
+                invocationMarry = paulinStructure!.invocationMarry
+            }
+            if userDefaults.bool(forKey: "InvocationJesus") == true {
+                invocationJesus = paulinStructure!.invocationJesus
+            }
+            childLabel.attributedText = generateContent(text: "\(pageContent)\(invocationMarry)\(invocationJesus)" )
         } else {
             // Do any additional setup after loading the view.
             if pager == 0 {
@@ -33,6 +49,17 @@ class ChildCrossTabViewController: BaseViewController {
             else {
                 childLabel.attributedText = generateContent(text: stabatStructure!.latin)
             }
+        }
+        if self.darkMode {
+            self.view.backgroundColor = UIColor.KrizovaCestaSMarii.backNightColor()
+            self.contentView.backgroundColor = UIColor.KrizovaCestaSMarii.backNightColor()
+            self.childLabel.backgroundColor = UIColor.KrizovaCestaSMarii.backNightColor()
+            self.childLabel.textColor = UIColor.KrizovaCestaSMarii.textNightColor()
+        } else {
+            self.view.backgroundColor = UIColor.KrizovaCestaSMarii.backLightColor()
+            self.contentView.backgroundColor = UIColor.KrizovaCestaSMarii.backLightColor()
+            self.childLabel.backgroundColor = UIColor.KrizovaCestaSMarii.backLightColor()
+            self.childLabel.textColor = UIColor.KrizovaCestaSMarii.textLightColor()
         }
     }
 }
