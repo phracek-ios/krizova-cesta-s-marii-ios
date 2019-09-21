@@ -45,7 +45,7 @@ class AboutViewController: BaseViewController {
             aboutLabel.attributedText = generateContent(text: about_text)
         } else {
             prayStructure = PaulinPrayersDataService.shared.paulinPrayersStructure
-            title = "Modlitebník"
+            title = "Modlitby z Paulínského modlitebníku"
             aboutLabel.attributedText = generateContent(text: "\(prayStructure!.good_day)\(prayStructure!.marry_I)\(prayStructure!.marry_II)")
         }
         if self.darkMode {

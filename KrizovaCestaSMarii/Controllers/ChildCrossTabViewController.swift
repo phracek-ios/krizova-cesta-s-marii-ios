@@ -22,6 +22,8 @@ class ChildCrossTabViewController: BaseViewController {
     var pager: Int = 0
     var mode: Int = 0
     var darkMode: Bool = false
+    var font_name: String = "Helvetica"
+    var font_size: CGFloat = 16
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +31,19 @@ class ChildCrossTabViewController: BaseViewController {
         paulinStructure = PaulinPrayersDataService.shared.paulinPrayersStructure
         let userDefaults = UserDefaults.standard
         self.darkMode = userDefaults.bool(forKey: "NightSwitch")
-        
+
+        if let saveFontName = userDefaults.string(forKey: "FontName") {
+            self.font_name = saveFontName
+        } else {
+            userDefaults.set("Helvetica", forKey: "FontName")
+        }
+        if let saveFontSize = userDefaults.string(forKey: "FontSize") {
+            guard let n = NumberFormatter().number(from: saveFontSize) else { return }
+            self.font_size = CGFloat(truncating: n)
+        } else {
+            userDefaults.set(16, forKey: "FontSize")
+            self.font_size = 16
+        }
         if mode == 0 {
             let userDefaults = UserDefaults.standard
             var invocationMarry: String = ""
@@ -40,14 +54,15 @@ class ChildCrossTabViewController: BaseViewController {
             if userDefaults.bool(forKey: "InvocationJesus") == true {
                 invocationJesus = paulinStructure!.invocationJesus
             }
-            childLabel.attributedText = generateContent(text: "\(pageContent)\(invocationMarry)\(invocationJesus)" )
+            childLabel.attributedText = generateContent(text: "\(pageContent)\(invocationMarry)\(invocationJesus)",
+                font_name: self.font_name, size: self.font_size)
         } else {
             // Do any additional setup after loading the view.
             if pager == 0 {
-                childLabel.attributedText = generateContent(text: stabatStructure!.czech)
+                childLabel.attributedText = generateContent(text: stabatStructure!.czech, font_name: self.font_name, size: self.font_size)
             }
             else {
-                childLabel.attributedText = generateContent(text: stabatStructure!.latin)
+                childLabel.attributedText = generateContent(text: stabatStructure!.latin, font_name: self.font_name, size: self.font_size)
             }
         }
         if self.darkMode {
