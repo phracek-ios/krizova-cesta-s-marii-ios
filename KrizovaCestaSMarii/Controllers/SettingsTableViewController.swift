@@ -29,7 +29,6 @@ class SettingsTableViewController: BaseTableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Nastavení"
-        self.tableView.tableFooterView = UIView()
         let userDefaults = UserDefaults.standard
         nightSwitch.isOn = userDefaults.bool(forKey: "NightSwitch")
         if nightSwitch.isOn == true {
@@ -124,10 +123,13 @@ class SettingsTableViewController: BaseTableViewController {
         }
         self.fontName.text = "\(String(font_name!)), \(String(font_size!))px"
     }
+    
+  
     func enabledDark() {
         self.view.backgroundColor = UIColor.KrizovaCestaSMarii.backNightColor()
         self.nightSwitch.backgroundColor = UIColor.KrizovaCestaSMarii.backNightColor()
         self.nightSwitchLabel.textColor = UIColor.KrizovaCestaSMarii.textNightColor()
+        //self.nightSwitchLabel.backgroundColor = UIColor.KrizovaCestaSMarii.backNightColor()
         self.nightSwitchCell.backgroundColor = UIColor.KrizovaCestaSMarii.backNightColor()
         self.dimOffSwitchLabel.textColor = UIColor.KrizovaCestaSMarii.textNightColor()
         self.dimOffSwitch.backgroundColor = UIColor.KrizovaCestaSMarii.backNightColor()
@@ -149,6 +151,7 @@ class SettingsTableViewController: BaseTableViewController {
         self.view.backgroundColor = UIColor.KrizovaCestaSMarii.backLightColor()
         self.nightSwitch.backgroundColor = UIColor.KrizovaCestaSMarii.backLightColor()
         self.nightSwitchLabel.textColor = UIColor.KrizovaCestaSMarii.textLightColor()
+        //self.nightSwitchLabel.backgroundColor = UIColor.KrizovaCestaSMarii.backLightColor()
         self.nightSwitchCell.backgroundColor = UIColor.KrizovaCestaSMarii.backLightColor()
         self.dimOffSwitchLabel.textColor = UIColor.KrizovaCestaSMarii.textLightColor()
         self.dimOffSwitch.backgroundColor = UIColor.KrizovaCestaSMarii.backLightColor()
