@@ -11,12 +11,10 @@ import UIKit
 class MainTableViewController: BaseTableViewController {
 
     enum RowType {
-        case about_cross_stations
-        case cross_stations
-        case stabat_mater
-        case pray
+        case maria_cross_stations
+        case paul_cross_stations
         case setting
-        case about_app
+        case about_appl
         case about_daughters
     }
     
@@ -45,11 +43,6 @@ class MainTableViewController: BaseTableViewController {
         navigationController?.navigationBar.barStyle = UIBarStyle.black;
         NotificationCenter.default.addObserver(self, selector: #selector(darkModeEnabled(_:)), name: .darkModeEnabled, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(darkModeDisabled(_:)), name: .darkModeDisabled, object: nil)
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
     deinit {
@@ -93,25 +86,17 @@ class MainTableViewController: BaseTableViewController {
         let mainViewController = UIStoryboard(name: "Main", bundle: nil)
         
         switch data.type {
-        case .about_cross_stations:
-            let aboutCrossStations = mainViewController.instantiateViewController(withIdentifier: "AboutCrossStation")
-            navigationController?.pushViewController(aboutCrossStations, animated: true)
-        case .cross_stations:
+        case .maria_cross_stations:
+            let crossStation = R.storyboard.main.crossTab()!
+            navigationController?.pushViewController(crossStation, animated: true)
+        case .paul_cross_stations:
             let tabView = R.storyboard.main.crossTab()!
             tabView.mode = 0
             navigationController?.pushViewController(tabView, animated: true)
-        case .stabat_mater:
-            let tabView = R.storyboard.main.crossTab()!
-            tabView.mode = 1
-            navigationController?.pushViewController(tabView, animated: true)
-        case .pray:
-            let view = R.storyboard.main.aboutApp()!
-            view.mode = 1
-            navigationController?.pushViewController(view, animated: true)
         case .setting:
             let settingsTableViewController = mainViewController.instantiateViewController(withIdentifier: "Settings")
             navigationController?.pushViewController(settingsTableViewController, animated: true)
-        case .about_app:
+        case .about_appl:
             let stabatViewController = mainViewController.instantiateViewController(withIdentifier: "AboutApp")
             navigationController?.pushViewController(stabatViewController, animated: true)
         case .about_daughters:
@@ -125,41 +110,31 @@ class MainTableViewController: BaseTableViewController {
     
     private func loadCrossStationsMenu() {
         let iconSettings = UIImage(named: "settings")
-        let iconPray = UIImage(named: "pray")
-        let iconCrossWay = UIImage(named: "crossway")
         let iconPaulin = UIImage(named: "paulinky")
-        let iconStabat = UIImage(named: "stabat")
-        let iconPath = UIImage(named: "path")
+        let iconMaria = UIImage(named: "maria")
+        let iconPaul = UIImage(named: "paul")
         let iconAppl = UIImage(named: "about_appl")
-        guard let about_cross_stations = CrossStationsMenu(name: "O křížové cestě", photo: iconPath, order: 0) else {
-            fatalError("Unable to instanciate Procházet kapitoly")
+        print("loadCrossMenu")
+        guard let maria_cross_station = CrossStationsMenu(name: "Křížová cesta s Marií", photo: iconMaria, order: 0) else {
+            fatalError("Unable to instanciate Krizova cesta s Marii")
         }
-        guard let cross_stations = CrossStationsMenu(name: "Křížová cesta", photo: iconCrossWay, order: 1) else {
-            fatalError("Unable to instanciate Hledat podle čísel")
+        guard let paul_cross_station = CrossStationsMenu(name: "Křížová cesta se sv. Pavlem", photo: iconPaul, order: 1) else {
+            fatalError("Unable to instanciate Krizova cesta se sv. Pavlem")
         }
-        guard let stabat_mater = CrossStationsMenu(name: "Stabat mater", photo: iconStabat, order: 2) else {
-            fatalError("Unable to instanciate Vyhledávání")
+        guard let setting = CrossStationsMenu(name: "Nastavení", photo: iconSettings, order: 2) else {
+            fatalError("Unable to instanciate Nastaveni")
         }
-        guard let pray = CrossStationsMenu(name: "Modlitby z Paulínského modlitebníku", photo: iconPray, order: 3) else {
-            fatalError("Unable to instanciate Hledat podle čísel")
+        guard let about_daughters = CrossStationsMenu(name: "O Dcerách sv. Pavla", photo: iconPaulin, order: 3) else {
+            fatalError("Unable to instanciate O dcerach")
         }
-        guard let setting = CrossStationsMenu(name: "Nastavení", photo: iconSettings, order: 3) else {
-            fatalError("Unable to instanciate Rejstřík")
-        }
-        guard let about_app = CrossStationsMenu(name: "O aplikaci", photo: iconAppl, order: 5) else {
-            fatalError("Unable to instanciate O projektu")
-        }
-        guard let about_daughters = CrossStationsMenu(name: "O Dcerách sv. Pavla", photo: iconPaulin, order: 7) else {
+        guard let about_app = CrossStationsMenu(name: "O aplikaci", photo: iconAppl, order: 4) else {
             fatalError("Unable to instanciate O aplikaci")
         }
-        
-        rowData = [RowData(type: .about_cross_stations, menu: about_cross_stations)]
-        rowData.append(RowData(type: .cross_stations, menu: cross_stations))
-        rowData.append(RowData(type: .stabat_mater, menu: stabat_mater))
-        rowData.append(RowData(type: .pray, menu: pray))
+        rowData = [RowData(type: .maria_cross_stations, menu: maria_cross_station)]
+        rowData.append(RowData(type: .paul_cross_stations, menu: paul_cross_station))
         rowData.append(RowData(type: .setting, menu: setting))
-        rowData.append(RowData(type: .about_app, menu: about_app))
         rowData.append(RowData(type: .about_daughters, menu: about_daughters))
+        rowData.append(RowData(type: .about_appl, menu: about_app))
     }
     @objc private func darkModeEnabled(_ notification: Notification) {
         self.darkMode = true

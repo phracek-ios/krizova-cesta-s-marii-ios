@@ -1,5 +1,5 @@
 //
-//  MainTableViewCell.swift
+//  CrossTableViewCell.swift
 //  KrizovaCestaSMarii
 //
 //  Created by Petr Hracek on 03/09/2019.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MainTableViewCell: UITableViewCell {
+class CrossTableViewCell: UITableViewCell {
 
     @IBOutlet weak var cellLabel: UILabel!
     @IBOutlet weak var cellImage: UIImageView!
