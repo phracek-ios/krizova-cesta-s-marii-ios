@@ -16,10 +16,13 @@
 		010C71F1231FE75100EB3B2D /* AboutDaugherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010C71F0231FE75100EB3B2D /* AboutDaugherViewController.swift */; };
 		010C71F5231FEDE600EB3B2D /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010C71F4231FEDE600EB3B2D /* SettingsTableViewController.swift */; };
 		010C71F7231FF44100EB3B2D /* FontViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010C71F6231FF44100EB3B2D /* FontViewController.swift */; };
-		010C71F9231FF6F700EB3B2D /* GeneratorText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010C71F8231FF6F700EB3B2D /* GeneratorText.swift */; };
 		010C71FC2320534100EB3B2D /* stabat_mater.json in Resources */ = {isa = PBXBuildFile; fileRef = 010C71FA2320534100EB3B2D /* stabat_mater.json */; };
 		010C71FD2320534100EB3B2D /* cross_stations.json in Resources */ = {isa = PBXBuildFile; fileRef = 010C71FB2320534100EB3B2D /* cross_stations.json */; };
 		010C71FF23205A0800EB3B2D /* paulin_prayers.json in Resources */ = {isa = PBXBuildFile; fileRef = 010C71FE23205A0800EB3B2D /* paulin_prayers.json */; };
+		01105422234397C900694D84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01105421234397C900694D84 /* Assets.xcassets */; };
+		011054242343984200694D84 /* PaylinPrayersStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011054232343984200694D84 /* PaylinPrayersStructure.swift */; };
+		011054262343985F00694D84 /* GeneratorText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011054252343985F00694D84 /* GeneratorText.swift */; };
+		011054282343986400694D84 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011054272343986400694D84 /* Styles.swift */; };
 		0123E7FB23420D95007C331C /* CrossTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0123E7FA23420D95007C331C /* CrossTableViewController.swift */; };
 		016D9CBA2330FB60005688B4 /* CrossTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016D9CB92330FB60005688B4 /* CrossTabViewController.swift */; };
 		016D9CBC2330FC34005688B4 /* ChildCrossTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016D9CBB2330FC34005688B4 /* ChildCrossTabViewController.swift */; };
@@ -32,11 +35,9 @@
 		0188241723438B5B0070C454 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0188241623438B5B0070C454 /* MainTableViewCell.swift */; };
 		018A0CEC232F849B001ABA82 /* About.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018A0CEB232F849B001ABA82 /* About.swift */; };
 		018A0CEE232F8538001ABA82 /* AboutDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018A0CED232F8538001ABA82 /* AboutDataService.swift */; };
-		019AEF1C232B8F34004A3003 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019AEF1B232B8F34004A3003 /* Styles.swift */; };
 		019AEF1F232BA7B4004A3003 /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019AEF1E232BA7B4004A3003 /* BaseTableViewController.swift */; };
 		019AEF21232BA859004A3003 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019AEF20232BA859004A3003 /* BaseViewController.swift */; };
 		019AEF23232BAED2004A3003 /* about.json in Resources */ = {isa = PBXBuildFile; fileRef = 019AEF22232BAED2004A3003 /* about.json */; };
-		01EECA452322496D0071732B /* PaylinPrayersStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EECA442322496D0071732B /* PaylinPrayersStructure.swift */; };
 		01EECA4723224AB20071732B /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EECA4623224AB20071732B /* Station.swift */; };
 		01EECA4923224AFA0071732B /* StationsStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EECA4823224AFA0071732B /* StationsStructure.swift */; };
 		01EECA4B23224B430071732B /* PaulinPrayersDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EECA4A23224B430071732B /* PaulinPrayersDataService.swift */; };
@@ -74,10 +75,13 @@
 		010C71F0231FE75100EB3B2D /* AboutDaugherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutDaugherViewController.swift; sourceTree = "<group>"; };
 		010C71F4231FEDE600EB3B2D /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		010C71F6231FF44100EB3B2D /* FontViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontViewController.swift; sourceTree = "<group>"; };
-		010C71F8231FF6F700EB3B2D /* GeneratorText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GeneratorText.swift; path = "/Users/phracek/work/programming/Apple/krizova-cesta-s-marii-ios/KrizovaCestaSMarii/Utilities/GeneratorText.swift"; sourceTree = "<absolute>"; };
 		010C71FA2320534100EB3B2D /* stabat_mater.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = stabat_mater.json; sourceTree = "<group>"; };
 		010C71FB2320534100EB3B2D /* cross_stations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cross_stations.json; sourceTree = "<group>"; };
 		010C71FE23205A0800EB3B2D /* paulin_prayers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = paulin_prayers.json; sourceTree = "<group>"; };
+		01105421234397C900694D84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		011054232343984200694D84 /* PaylinPrayersStructure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaylinPrayersStructure.swift; sourceTree = "<group>"; };
+		011054252343985F00694D84 /* GeneratorText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratorText.swift; sourceTree = "<group>"; };
+		011054272343986400694D84 /* Styles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
 		0123E7FA23420D95007C331C /* CrossTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrossTableViewController.swift; sourceTree = "<group>"; };
 		016D9CB92330FB60005688B4 /* CrossTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrossTabViewController.swift; sourceTree = "<group>"; };
 		016D9CBB2330FC34005688B4 /* ChildCrossTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildCrossTabViewController.swift; sourceTree = "<group>"; };
@@ -96,11 +100,9 @@
 		0188241623438B5B0070C454 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
 		018A0CEB232F849B001ABA82 /* About.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = About.swift; sourceTree = "<group>"; };
 		018A0CED232F8538001ABA82 /* AboutDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutDataService.swift; sourceTree = "<group>"; };
-		019AEF1B232B8F34004A3003 /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Styles.swift; path = KrizovaCestaSMarii/Utilities/Styles.swift; sourceTree = SOURCE_ROOT; };
 		019AEF1E232BA7B4004A3003 /* BaseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
 		019AEF20232BA859004A3003 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		019AEF22232BAED2004A3003 /* about.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = about.json; sourceTree = "<group>"; };
-		01EECA442322496D0071732B /* PaylinPrayersStructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PaylinPrayersStructure.swift; path = KrizovaCestaSMarii/Model/PaylinPrayersStructure.swift; sourceTree = SOURCE_ROOT; };
 		01EECA4623224AB20071732B /* Station.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
 		01EECA4823224AFA0071732B /* StationsStructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsStructure.swift; sourceTree = "<group>"; };
 		01EECA4A23224B430071732B /* PaulinPrayersDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaulinPrayersDataService.swift; sourceTree = "<group>"; };
@@ -174,7 +176,7 @@
 		01026C48231E9FAA00C7E52B /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				01EECA442322496D0071732B /* PaylinPrayersStructure.swift */,
+				011054232343984200694D84 /* PaylinPrayersStructure.swift */,
 				01EECA4623224AB20071732B /* Station.swift */,
 				01EECA4823224AFA0071732B /* StationsStructure.swift */,
 				01EECA4E23224CA00071732B /* StabatMaterStructure.swift */,
@@ -186,9 +188,9 @@
 		010C71E7231FA43400EB3B2D /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				010C71F8231FF6F700EB3B2D /* GeneratorText.swift */,
+				011054272343986400694D84 /* Styles.swift */,
+				011054252343985F00694D84 /* GeneratorText.swift */,
 				010C71E5231FA42F00EB3B2D /* NotificationsName.swift */,
-				019AEF1B232B8F34004A3003 /* Styles.swift */,
 				010C71E8231FA6D000EB3B2D /* CrossColors.swift */,
 			);
 			path = Utilities;
@@ -198,8 +200,8 @@
 			isa = PBXGroup;
 			children = (
 				01797173231E8BF800BB9454 /* KrizoveCestyPaulinky */,
-				01797188231E8BFA00BB9454 /* KrizovaCestaSMariiTests */,
-				01797193231E8BFA00BB9454 /* KrizovaCestaSMariiUITests */,
+				01797188231E8BFA00BB9454 /* KrizoveCestyPaulinkyTests */,
+				01797193231E8BFA00BB9454 /* KrizoveCestyPaulinkyUITests */,
 				01797172231E8BF800BB9454 /* Products */,
 				401559BDC7864E7E37A564F1 /* Pods */,
 				AC65D82971A941A5D96A7A00 /* Frameworks */,
@@ -219,6 +221,7 @@
 		01797173231E8BF800BB9454 /* KrizoveCestyPaulinky */ = {
 			isa = PBXGroup;
 			children = (
+				01105421234397C900694D84 /* Assets.xcassets */,
 				017BDA732327D39F0019E672 /* R.generated.swift */,
 				01EECA43232249130071732B /* Services */,
 				010C71EC231FC6DE00EB3B2D /* CrossStationsMenu.swift */,
@@ -234,22 +237,22 @@
 			path = KrizoveCestyPaulinky;
 			sourceTree = "<group>";
 		};
-		01797188231E8BFA00BB9454 /* KrizovaCestaSMariiTests */ = {
+		01797188231E8BFA00BB9454 /* KrizoveCestyPaulinkyTests */ = {
 			isa = PBXGroup;
 			children = (
 				01797189231E8BFA00BB9454 /* KrizovaCestaSMariiTests.swift */,
 				0179718B231E8BFA00BB9454 /* Info.plist */,
 			);
-			path = KrizovaCestaSMariiTests;
+			path = KrizoveCestyPaulinkyTests;
 			sourceTree = "<group>";
 		};
-		01797193231E8BFA00BB9454 /* KrizovaCestaSMariiUITests */ = {
+		01797193231E8BFA00BB9454 /* KrizoveCestyPaulinkyUITests */ = {
 			isa = PBXGroup;
 			children = (
 				01797194231E8BFA00BB9454 /* KrizovaCestaSMariiUITests.swift */,
 				01797196231E8BFA00BB9454 /* Info.plist */,
 			);
-			path = KrizovaCestaSMariiUITests;
+			path = KrizoveCestyPaulinkyUITests;
 			sourceTree = "<group>";
 		};
 		019AEF1D232BA79B004A3003 /* Base */ = {
@@ -402,6 +405,7 @@
 				010C71FF23205A0800EB3B2D /* paulin_prayers.json in Resources */,
 				010C71FD2320534100EB3B2D /* cross_stations.json in Resources */,
 				0179717F231E8BFA00BB9454 /* LaunchScreen.storyboard in Resources */,
+				01105422234397C900694D84 /* Assets.xcassets in Resources */,
 				019AEF23232BAED2004A3003 /* about.json in Resources */,
 				0179717A231E8BF800BB9454 /* Main.storyboard in Resources */,
 			);
@@ -437,7 +441,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$SRCROOT/R.generated.swift",
+				$SRCROOT/R.generated.swift,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -491,16 +495,19 @@
 			files = (
 				01026C43231E9DA000C7E52B /* MainTableViewController.swift in Sources */,
 				019AEF1F232BA7B4004A3003 /* BaseTableViewController.swift in Sources */,
+				011054262343985F00694D84 /* GeneratorText.swift in Sources */,
 				017BDA742327D3A00019E672 /* R.generated.swift in Sources */,
 				018A0CEE232F8538001ABA82 /* AboutDataService.swift in Sources */,
 				010C71E6231FA42F00EB3B2D /* NotificationsName.swift in Sources */,
 				019AEF21232BA859004A3003 /* BaseViewController.swift in Sources */,
 				010C71F1231FE75100EB3B2D /* AboutDaugherViewController.swift in Sources */,
+				011054242343984200694D84 /* PaylinPrayersStructure.swift in Sources */,
 				010C71ED231FC6DE00EB3B2D /* CrossStationsMenu.swift in Sources */,
 				010C71EF231FC8C100EB3B2D /* AboutViewController.swift in Sources */,
 				016D9CBC2330FC34005688B4 /* ChildCrossTabViewController.swift in Sources */,
 				018A0CEC232F849B001ABA82 /* About.swift in Sources */,
 				01026C45231E9DB900C7E52B /* CrossTableViewCell.swift in Sources */,
+				011054282343986400694D84 /* Styles.swift in Sources */,
 				016D9CBA2330FB60005688B4 /* CrossTabViewController.swift in Sources */,
 				01EECA5123224CE70071732B /* StabatMaterDataService.swift in Sources */,
 				01EECA4723224AB20071732B /* Station.swift in Sources */,
@@ -509,10 +516,7 @@
 				010C71E9231FA6D000EB3B2D /* CrossColors.swift in Sources */,
 				01EECA4923224AFA0071732B /* StationsStructure.swift in Sources */,
 				01EECA4F23224CA00071732B /* StabatMaterStructure.swift in Sources */,
-				019AEF1C232B8F34004A3003 /* Styles.swift in Sources */,
-				01EECA452322496D0071732B /* PaylinPrayersStructure.swift in Sources */,
 				010C71F7231FF44100EB3B2D /* FontViewController.swift in Sources */,
-				010C71F9231FF6F700EB3B2D /* GeneratorText.swift in Sources */,
 				0123E7FB23420D95007C331C /* CrossTableViewController.swift in Sources */,
 				01797175231E8BF800BB9454 /* AppDelegate.swift in Sources */,
 				01EECA572322535B0071732B /* AboutCrossViewController.swift in Sources */,
@@ -695,7 +699,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 32253C46P7;
-				INFOPLIST_FILE = KrizovaCestaSMarii/Info.plist;
+				INFOPLIST_FILE = KrizoveCestyPaulinky/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -716,7 +720,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 32253C46P7;
-				INFOPLIST_FILE = KrizovaCestaSMarii/Info.plist;
+				INFOPLIST_FILE = KrizoveCestyPaulinky/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
