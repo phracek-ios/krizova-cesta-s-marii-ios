@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_KrizovaCestaSMariiVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_KrizovaCestaSMariiVersionString[];
+FOUNDATION_EXPORT double Pods_KrizoveCestyPaulinkyVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_KrizoveCestyPaulinkyVersionString[];
 

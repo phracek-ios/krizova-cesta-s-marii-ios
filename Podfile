@@ -1,7 +1,7 @@
 platform :ios, '10.0'
 inhibit_all_warnings!
 
-target 'KrizovaCestaSMarii' do
+target 'KrizoveCestyPaulinky' do
 	use_frameworks!
 
   pod 'TTTAttributedLabel'
