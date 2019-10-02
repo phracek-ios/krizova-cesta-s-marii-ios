@@ -9,8 +9,10 @@
 import Foundation
 
 struct AboutStructure: Decodable {
-    var about_cross_way: String
-    var about_daughters_1: String
+    var about_cross_way_marie: String
+    var about_daughters_marie: String
     var about_daughters_2: String
     var about_daughters_3: String
+    var about_cross_way_paul: String
+    var about_daughters_paul: String
 }

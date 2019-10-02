@@ -11,16 +11,16 @@
         <!--Křížová cesta s Marií-->
         <scene sceneID="7Am-DU-Thk">
             <objects>
-                <tableViewController storyboardIdentifier="KrizoveCesty" id="Fvv-5F-zxR" customClass="CrossTableViewController" customModule="KrizovaCestaSMarii" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="CrossStations" id="Fvv-5F-zxR" customClass="CrossTableViewController" customModule="CestaPaulínky" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="AXT-Fk-wFh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="MainTableViewCell" rowHeight="80" id="thu-08-6dq" customClass="CrossTableViewCell" customModule="CestaPaulínky">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="CrossTableViewCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="CrossTableViewCell" rowHeight="80" id="thu-08-6dq" userLabel="CrossTableViewCell" customClass="CrossTableViewCell" customModule="CestaPaulínky">
                                 <rect key="frame" x="0.0" y="28" width="375" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="thu-08-6dq" id="e42-7c-QVc" customClass="MainTableViewCell" customModule="KrizovaCestaSMarii" customModuleProvider="target">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="thu-08-6dq" id="e42-7c-QVc" customClass="CrossTableViewCell" customModule="CestaPaulínky" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="347.5" height="80"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
@@ -56,7 +56,7 @@
         <!--About Cross View Controller-->
         <scene sceneID="UQD-Hb-llP">
             <objects>
-                <viewController storyboardIdentifier="AboutCrossStation" id="mNH-BT-zmK" customClass="AboutCrossViewController" customModule="KrizovaCestaSMarii" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AboutCrossStation" id="mNH-BT-zmK" customClass="AboutCrossViewController" customModule="CestaPaulínky" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KlS-0i-ucv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -116,7 +116,7 @@
         <!--About View Controller-->
         <scene sceneID="Usg-DY-6uy">
             <objects>
-                <viewController storyboardIdentifier="AboutApp" id="lVz-5A-3oX" customClass="AboutViewController" customModule="KrizovaCestaSMarii" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AboutApp" id="lVz-5A-3oX" customClass="AboutViewController" customModule="CestaPaulínky" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="c0K-cL-E1b">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -176,7 +176,7 @@
         <!--About Daugher View Controller-->
         <scene sceneID="Cwr-1Q-YBh">
             <objects>
-                <viewController storyboardIdentifier="AboutDaughters" id="29V-Eq-67T" customClass="AboutDaugherViewController" customModule="KrizovaCestaSMarii" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AboutDaughters" id="29V-Eq-67T" customClass="AboutDaugherViewController" customModule="CestaPaulínky" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KG5-s6-GS6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -243,7 +243,7 @@
         <!--Cross Tab View Controller-->
         <scene sceneID="kDt-cy-st1">
             <objects>
-                <viewController storyboardIdentifier="CrossTab" id="7bM-xg-aZr" customClass="CrossTabViewController" customModule="KrizovaCestaSMarii" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CrossTab" id="7bM-xg-aZr" customClass="CrossTabViewController" customModule="CestaPaulínky" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zVy-EX-17J">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -293,7 +293,7 @@
         <!--Child Cross Tab View Controller-->
         <scene sceneID="7jG-gb-CTI">
             <objects>
-                <viewController storyboardIdentifier="ChildCrossTab" id="78q-0a-hUT" customClass="ChildCrossTabViewController" customModule="KrizovaCestaSMarii" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ChildCrossTab" id="78q-0a-hUT" customClass="ChildCrossTabViewController" customModule="CestaPaulínky" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8d0-T5-o0X">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -386,7 +386,7 @@
         <!--Nastavení-->
         <scene sceneID="tKZ-7c-SA5">
             <objects>
-                <tableViewController storyboardIdentifier="Settings" title="Nastavení" id="gcI-BQ-iGw" customClass="SettingsTableViewController" customModule="KrizovaCestaSMarii" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="Settings" title="Nastavení" id="gcI-BQ-iGw" customClass="SettingsTableViewController" customModule="CestaPaulínky" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="NDx-Ir-naa">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -505,66 +505,70 @@
                                             <segue destination="meY-at-Dh3" kind="show" identifier="FontSettings" id="ltV-ei-BJG"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="50" id="wbX-L3-lZR">
-                                        <rect key="frame" x="0.0" y="178" width="375" height="50"/>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Pro Křížovou cestu s Marií" id="oNw-Bk-RpN">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="50" id="QAr-Db-kZq">
+                                        <rect key="frame" x="0.0" y="234" width="375" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wbX-L3-lZR" id="0P8-ih-TpT">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QAr-Db-kZq" id="WPw-bb-pt1">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zobrazovat invokaci k Panně Marii" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sI5-cA-j9S">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zobrazovat invokaci k Panně Marii" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hwa-Ye-xnz">
                                                     <rect key="frame" x="15" y="5" width="259.5" height="40"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sMa-pp-DgO">
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Gk-Nh-pCY">
                                                     <rect key="frame" x="311" y="5" width="51" height="40"/>
                                                     <connections>
-                                                        <action selector="funcInvocationMarry:" destination="gcI-BQ-iGw" eventType="valueChanged" id="rBn-ka-AXI"/>
+                                                        <action selector="funcInvocationMarry:" destination="gcI-BQ-iGw" eventType="valueChanged" id="zkM-pc-ECO"/>
                                                     </connections>
                                                 </switch>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="sI5-cA-j9S" secondAttribute="bottom" constant="5" id="1bp-tl-VZT"/>
-                                                <constraint firstAttribute="trailing" secondItem="sMa-pp-DgO" secondAttribute="trailing" constant="15" id="6do-KY-UvH"/>
-                                                <constraint firstAttribute="bottom" secondItem="sMa-pp-DgO" secondAttribute="bottom" constant="5" id="OOs-F6-NWF"/>
-                                                <constraint firstItem="sI5-cA-j9S" firstAttribute="leading" secondItem="0P8-ih-TpT" secondAttribute="leading" constant="15" id="g58-aN-ROU"/>
-                                                <constraint firstItem="sI5-cA-j9S" firstAttribute="top" secondItem="0P8-ih-TpT" secondAttribute="top" constant="5" id="gXj-jx-W4F"/>
-                                                <constraint firstItem="sMa-pp-DgO" firstAttribute="top" secondItem="0P8-ih-TpT" secondAttribute="top" constant="5" id="tPX-Bl-48Q"/>
+                                                <constraint firstAttribute="bottom" secondItem="6Gk-Nh-pCY" secondAttribute="bottom" constant="5" id="B9c-dz-Coc"/>
+                                                <constraint firstAttribute="trailing" secondItem="6Gk-Nh-pCY" secondAttribute="trailing" constant="15" id="IHc-Sw-tjY"/>
+                                                <constraint firstItem="hwa-Ye-xnz" firstAttribute="leading" secondItem="WPw-bb-pt1" secondAttribute="leading" constant="15" id="Iye-cR-fTv"/>
+                                                <constraint firstItem="hwa-Ye-xnz" firstAttribute="top" secondItem="WPw-bb-pt1" secondAttribute="top" constant="5" id="mCt-p3-W0Z"/>
+                                                <constraint firstItem="6Gk-Nh-pCY" firstAttribute="top" secondItem="WPw-bb-pt1" secondAttribute="top" constant="5" id="pOh-At-CJo"/>
+                                                <constraint firstAttribute="bottom" secondItem="hwa-Ye-xnz" secondAttribute="bottom" constant="5" id="xLR-a4-Et4"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <accessibility key="accessibilityConfiguration">
                                             <accessibilityTraits key="traits" notEnabled="YES"/>
                                         </accessibility>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="50" id="LI7-PK-FXk">
-                                        <rect key="frame" x="0.0" y="228" width="375" height="50"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="50" id="mg4-Nq-dWj">
+                                        <rect key="frame" x="0.0" y="284" width="375" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LI7-PK-FXk" id="6YP-TD-3gc">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mg4-Nq-dWj" id="mOs-Qq-9Pc">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zobrazovat invokaci k Ježíši" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IYP-ck-iEP">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zobrazovat invokaci k Ježíši" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wmf-om-dda">
                                                     <rect key="frame" x="15" y="5" width="213.5" height="40"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kHy-tf-Bvh">
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m4M-vZ-xih">
                                                     <rect key="frame" x="311" y="5" width="51" height="40"/>
                                                     <connections>
-                                                        <action selector="funcInvocationJesus:" destination="gcI-BQ-iGw" eventType="valueChanged" id="aL6-vK-xsv"/>
+                                                        <action selector="funcInvocationJesus:" destination="gcI-BQ-iGw" eventType="valueChanged" id="240-fq-gLa"/>
                                                     </connections>
                                                 </switch>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="IYP-ck-iEP" secondAttribute="bottom" constant="5" id="6Y3-bD-Nee"/>
-                                                <constraint firstItem="IYP-ck-iEP" firstAttribute="leading" secondItem="6YP-TD-3gc" secondAttribute="leading" constant="15" id="FQk-b6-tcs"/>
-                                                <constraint firstAttribute="trailing" secondItem="kHy-tf-Bvh" secondAttribute="trailing" constant="15" id="FWd-6d-SjY"/>
-                                                <constraint firstAttribute="bottom" secondItem="kHy-tf-Bvh" secondAttribute="bottom" constant="5" id="aQZ-4k-80K"/>
-                                                <constraint firstItem="kHy-tf-Bvh" firstAttribute="top" secondItem="6YP-TD-3gc" secondAttribute="top" constant="5" id="lhM-U8-8im"/>
-                                                <constraint firstItem="IYP-ck-iEP" firstAttribute="top" secondItem="6YP-TD-3gc" secondAttribute="top" constant="5" id="nfd-fR-8Tg"/>
+                                                <constraint firstItem="Wmf-om-dda" firstAttribute="top" secondItem="mOs-Qq-9Pc" secondAttribute="top" constant="5" id="2TJ-v7-KJy"/>
+                                                <constraint firstAttribute="bottom" secondItem="Wmf-om-dda" secondAttribute="bottom" constant="5" id="7nI-XK-LRG"/>
+                                                <constraint firstAttribute="bottom" secondItem="m4M-vZ-xih" secondAttribute="bottom" constant="5" id="QcA-Uo-eFU"/>
+                                                <constraint firstItem="Wmf-om-dda" firstAttribute="leading" secondItem="mOs-Qq-9Pc" secondAttribute="leading" constant="15" id="Uy3-qQ-KD3"/>
+                                                <constraint firstItem="m4M-vZ-xih" firstAttribute="top" secondItem="mOs-Qq-9Pc" secondAttribute="top" constant="5" id="ZJq-kj-aU1"/>
+                                                <constraint firstAttribute="trailing" secondItem="m4M-vZ-xih" secondAttribute="trailing" constant="15" id="aAS-B3-Y0g"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <accessibility key="accessibilityConfiguration">
@@ -589,12 +593,12 @@
                         <outlet property="fontCaptionLabel" destination="t2G-6T-W1d" id="zAL-DB-Oun"/>
                         <outlet property="fontCell" destination="ujg-Ya-NIM" id="ceV-2R-04e"/>
                         <outlet property="fontName" destination="vzb-rJ-JWG" id="ZKW-P8-nE9"/>
-                        <outlet property="invocationJesusCell" destination="LI7-PK-FXk" id="9sm-h1-SXT"/>
-                        <outlet property="invocationJesusLabel" destination="IYP-ck-iEP" id="Imn-Qy-kNG"/>
-                        <outlet property="invocationJesusSwitch" destination="kHy-tf-Bvh" id="CYP-Sn-tqc"/>
-                        <outlet property="invocationMarryCell" destination="wbX-L3-lZR" id="b3Y-o3-pul"/>
-                        <outlet property="invocationMarryLabel" destination="sI5-cA-j9S" id="Xz3-vv-JgR"/>
-                        <outlet property="invocationMarrySwitch" destination="sMa-pp-DgO" id="peY-wL-6fl"/>
+                        <outlet property="invocationJesusCell" destination="mg4-Nq-dWj" id="2jf-EX-Uef"/>
+                        <outlet property="invocationJesusLabel" destination="Wmf-om-dda" id="TEF-2C-2B1"/>
+                        <outlet property="invocationJesusSwitch" destination="m4M-vZ-xih" id="6zf-fa-pSe"/>
+                        <outlet property="invocationMarryCell" destination="QAr-Db-kZq" id="uoo-up-a5w"/>
+                        <outlet property="invocationMarryLabel" destination="hwa-Ye-xnz" id="X5P-2S-STs"/>
+                        <outlet property="invocationMarrySwitch" destination="6Gk-Nh-pCY" id="k9q-Zy-l4d"/>
                         <outlet property="nightSwitch" destination="0Iz-vw-4tC" id="or4-oA-xzE"/>
                         <outlet property="nightSwitchCell" destination="k0M-Mz-FXt" id="x3P-pZ-xWz"/>
                         <outlet property="nightSwitchLabel" destination="ZWI-fg-SEh" id="nLJ-tk-lns"/>
@@ -607,7 +611,7 @@
         <!--Font View Controller-->
         <scene sceneID="Wkb-tV-6UK">
             <objects>
-                <viewController storyboardIdentifier="FontSettings" id="meY-at-Dh3" customClass="FontViewController" customModule="KrizovaCestaSMarii" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FontSettings" id="meY-at-Dh3" customClass="FontViewController" customModule="CestaPaulínky" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tJj-9C-joW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -739,17 +743,17 @@
         <!--Main Table View Controller-->
         <scene sceneID="1yA-1S-rof">
             <objects>
-                <tableViewController id="jE0-wH-u8q" customClass="MainTableViewController" customModule="KrizovaCestaSMarii" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Aeg-Uz-Evy">
+                <tableViewController id="jE0-wH-u8q" customClass="MainTableViewController" customModule="CestaPaulínky" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Aeg-Uz-Evy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="MainTableViewCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MainTableViewCell" rowHeight="80" id="nqU-0e-g3e" customClass="MainTableViewCell" customModule="CestaPaulínky">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="MainTableViewCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="MainTableViewCell" id="nqU-0e-g3e" customClass="MainTableViewCell" customModule="CestaPaulínky">
                                 <rect key="frame" x="0.0" y="28" width="375" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nqU-0e-g3e" id="yMv-aU-7Ye">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="347.5" height="80"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="settings" translatesAutoresizingMaskIntoConstraints="NO" id="Wn1-YZ-ddy">

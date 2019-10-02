@@ -48,7 +48,7 @@ class AboutDaugherViewController: BaseViewController, TTTAttributedLabelDelegate
             userDefaults.set(16, forKey: "FontSize")
             self.font_size = 16
         }
-        let text =  "\(aboutStructure.about_daughters_1)\(paulin_email)<br>\(paulin_web_cz)<br>\(paulin_web_org)</p>\(aboutStructure.about_daughters_2)\(paulin_watch)</p>\(aboutStructure.about_daughters_3)\(paulin_adore_text)</p><br>"
+        let text =  "\(aboutStructure.about_daughters_marie)\(paulin_email)<br>\(paulin_web_cz)<br>\(paulin_web_org)</p>\(aboutStructure.about_daughters_2)\(paulin_watch)</p>\(aboutStructure.about_daughters_3)\(paulin_adore_text)</p><br>"
         self.darkMode = userDefaults.bool(forKey: "NightSwitch")
         var textColor = UIColor.KrizovaCestaSMarii.textLightColor()
         if self.darkMode {
@@ -67,8 +67,8 @@ class AboutDaugherViewController: BaseViewController, TTTAttributedLabelDelegate
         aboutLabel.delegate = self
         var numberWords = 0
         aboutLabel.setText(generateContent(text: text, color: textColor))
-        aboutLabel.addLink(to: URL(string: paulin_email), with: NSRange(location: aboutStructure.about_daughters_1.count - 45, length: paulin_email.count))
-        numberWords += aboutStructure.about_daughters_1.count - 45 + paulin_email.count
+        aboutLabel.addLink(to: URL(string: paulin_email), with: NSRange(location: aboutStructure.about_daughters_marie.count - 45, length: paulin_email.count))
+        numberWords += aboutStructure.about_daughters_marie.count - 45 + paulin_email.count
         aboutLabel.addLink(to: URL(string: paulin_web_cz), with: NSRange(location: numberWords, length: paulin_web_cz.count))
         numberWords += paulin_web_cz.count
         aboutLabel.addLink(to: URL(string: paulin_web_org), with: NSRange(location: numberWords, length: paulin_web_org.count + 4))

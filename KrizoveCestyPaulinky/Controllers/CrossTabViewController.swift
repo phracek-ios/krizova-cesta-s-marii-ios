@@ -12,13 +12,18 @@ import XLPagerTabStrip
 class CrossTabViewController: ButtonBarPagerTabStripViewController {
 
     fileprivate var stationsStructure: StationsStructure?
+    var modePaulOrMarrry: Int = 0
     var mode: Int = 0
     override func viewDidLoad() {
         super.viewDidLoad()
         if mode == 0 {
-            title = "Křížová cesta"
-        } else {
+            title = "Křížová cesta s Marií"
+        } else if mode == 1 {
+            title = "Křížová cesta s Pavlem"
+        } else if mode == 2 {
             title = "Stabat Mater"
+        } else {
+            title = "Modlitby z Paulínského modlitebníku"
         }
         setupPagerTabBar()
         let backItem = UIBarButtonItem()
@@ -37,26 +42,45 @@ class CrossTabViewController: ButtonBarPagerTabStripViewController {
         if mode == 0 {
             for i in 0..<16 {
                 let vc = R.storyboard.main.childCrossTab()!
-                let station = stationsStructure.station[i]
+                let station = stationsStructure.stationMaria[i]
                 vc.pagerTabTitle = "\(station.name)".uppercased()
                 vc.pageContent = station.text
                 vc.pager = i
                 vc.mode = 0
                 controllers.append(vc)
             }
-        } else {
+        } else if mode == 1 {
+            for i in 0..<17 {
+                let vc = R.storyboard.main.childCrossTab()!
+                let station = stationsStructure.stationPaul[i]
+                vc.pagerTabTitle = "\(station.name)".uppercased()
+                vc.pageContent = station.text
+                vc.pager = i
+                vc.mode = 1
+                controllers.append(vc)
+            }
+        } else if mode == 2 {
             let czech = R.storyboard.main.childCrossTab()!
             czech.pagerTabTitle = "Česky"
             czech.pager = 0
-            czech.mode = 1
+            czech.mode = 2
             let latin = R.storyboard.main.childCrossTab()!
             latin.pagerTabTitle = "Latinsky"
             latin.pager = 1
-            latin.mode = 1
+            latin.mode = 2
             controllers.append(czech)
             controllers.append(latin)
+        } else {
+            for i in 0..<3 {
+                let vc = R.storyboard.main.childCrossTab()!
+                let prayer = stationsStructure.prayer[i]
+                vc.pagerTabTitle = "\(prayer.name)".uppercased()
+                vc.pageContent = prayer.text
+                vc.pager = i
+                vc.mode = 0
+                controllers.append(vc)
+            }
         }
-        
         return controllers
     }
 

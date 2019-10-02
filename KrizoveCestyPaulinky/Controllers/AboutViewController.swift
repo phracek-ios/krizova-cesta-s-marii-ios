@@ -10,7 +10,7 @@ import UIKit
 
 class AboutViewController: BaseViewController {
 
-    let about_text: String = "<p>Křížová cesta s Marií<br><br>Offline mobilní verze pro iOS.</p><p>Autor mobilní aplikace: Petr Hráček</p><br><br><p>Případné chyby, připomínky, nápady či postřehy prosím pište na adresu phracek@gmail.com.</p>"
+    let about_text: String = "<p>Křížové cesty - Paulínky<br><br>Offline mobilní verze pro iOS.</p><p>Aplikace obsahuje dvě křížové cesty, které vydali Paulínky.<br></p><p>Autor mobilní aplikace: Petr Hráček</p><br><br><p>Případné chyby, připomínky, nápady či postřehy prosím pište na adresu phracek@gmail.com.</p>"
     
     @IBOutlet weak var aboutLabel: UILabel!
     @IBOutlet weak var contentView: UIView!
@@ -38,15 +38,15 @@ class AboutViewController: BaseViewController {
             self.font_size = 16
         }
         self.darkMode = userDefaults.bool(forKey: "NightSwitch")
-
+        prayStructure = PaulinPrayersDataService.shared.paulinPrayersStructure
         aboutLabel.numberOfLines = 0
         if mode == 0 {
             title = "O aplikaci"
             aboutLabel.attributedText = generateContent(text: about_text)
-        } else {
-            prayStructure = PaulinPrayersDataService.shared.paulinPrayersStructure
+        } else if mode == 1 {
             title = "Modlitby z Paulínského modlitebníku"
             aboutLabel.attributedText = generateContent(text: "\(prayStructure!.good_day)\(prayStructure!.marry_I)\(prayStructure!.marry_II)")
+        } else {
         }
         if self.darkMode {
             self.view.backgroundColor = UIColor.KrizovaCestaSMarii.backNightColor()

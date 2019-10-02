@@ -44,8 +44,8 @@ class ChildCrossTabViewController: BaseViewController {
             userDefaults.set(16, forKey: "FontSize")
             self.font_size = 16
         }
+        var attributedText: NSAttributedString
         if mode == 0 {
-            let userDefaults = UserDefaults.standard
             var invocationMarry: String = ""
             var invocationJesus: String = ""
             if userDefaults.bool(forKey: "InvocationMarry") == true {
@@ -54,17 +54,21 @@ class ChildCrossTabViewController: BaseViewController {
             if userDefaults.bool(forKey: "InvocationJesus") == true {
                 invocationJesus = paulinStructure!.invocationJesus
             }
-            childLabel.attributedText = generateContent(text: "\(pageContent)\(invocationMarry)\(invocationJesus)",
+            attributedText = generateContent(text: "\(pageContent)\(invocationMarry)\(invocationJesus)",
+                font_name: self.font_name, size: self.font_size)
+        } else if mode == 1 {
+            attributedText = generateContent(text: "\(pageContent)",
                 font_name: self.font_name, size: self.font_size)
         } else {
             // Do any additional setup after loading the view.
             if pager == 0 {
-                childLabel.attributedText = generateContent(text: stabatStructure!.czech, font_name: self.font_name, size: self.font_size)
+                attributedText = generateContent(text: stabatStructure!.czech, font_name: self.font_name, size: self.font_size)
             }
             else {
-                childLabel.attributedText = generateContent(text: stabatStructure!.latin, font_name: self.font_name, size: self.font_size)
+                attributedText = generateContent(text: stabatStructure!.latin, font_name: self.font_name, size: self.font_size)
             }
         }
+        childLabel.attributedText = attributedText
         if self.darkMode {
             self.view.backgroundColor = UIColor.KrizovaCestaSMarii.backNightColor()
             self.contentView.backgroundColor = UIColor.KrizovaCestaSMarii.backNightColor()

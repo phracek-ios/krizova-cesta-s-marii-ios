@@ -9,5 +9,7 @@
 import Foundation
 
 struct StationsStructure: Decodable {
-    var station: [Station]
+    var stationMaria: [Station]
+    var stationPaul: [Station]
+    var prayer: [Station]
 }

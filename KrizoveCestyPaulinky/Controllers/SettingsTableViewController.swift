@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import BonMot
 
 class SettingsTableViewController: BaseTableViewController {
 

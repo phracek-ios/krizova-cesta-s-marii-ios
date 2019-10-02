@@ -13,14 +13,14 @@ class MainTableViewController: BaseTableViewController {
     enum RowType {
         case maria_cross_stations
         case paul_cross_stations
-        case setting
+        case settings
         case about_appl
         case about_daughters
     }
     
     struct RowData {
         let type: RowType
-        let menu: CrossStationsMenu?
+        let menu: MainMenu?
     }
     
     fileprivate var rowData = [RowData]()
@@ -83,24 +83,24 @@ class MainTableViewController: BaseTableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let data = rowData[indexPath.row]
-        let mainViewController = UIStoryboard(name: "Main", bundle: nil)
         
         switch data.type {
         case .maria_cross_stations:
-            let crossStation = R.storyboard.main.crossTab()!
+            let crossStation = R.storyboard.main.crossStations()!
+            crossStation.mode = 0
             navigationController?.pushViewController(crossStation, animated: true)
         case .paul_cross_stations:
-            let tabView = R.storyboard.main.crossTab()!
-            tabView.mode = 0
-            navigationController?.pushViewController(tabView, animated: true)
-        case .setting:
-            let settingsTableViewController = mainViewController.instantiateViewController(withIdentifier: "Settings")
+            let crossStation = R.storyboard.main.crossStations()!
+            crossStation.mode = 1
+            navigationController?.pushViewController(crossStation, animated: true)
+        case .settings:
+            let settingsTableViewController = R.storyboard.main.settings()!
             navigationController?.pushViewController(settingsTableViewController, animated: true)
         case .about_appl:
-            let stabatViewController = mainViewController.instantiateViewController(withIdentifier: "AboutApp")
+            let stabatViewController = R.storyboard.main.aboutApp()!
             navigationController?.pushViewController(stabatViewController, animated: true)
         case .about_daughters:
-            let stabatViewController = mainViewController.instantiateViewController(withIdentifier: "AboutDaughters")
+            let stabatViewController = R.storyboard.main.aboutDaughters()!
             navigationController?.pushViewController(stabatViewController, animated: true)
         }
     }
@@ -109,30 +109,30 @@ class MainTableViewController: BaseTableViewController {
    
     
     private func loadCrossStationsMenu() {
-        let iconSettings = UIImage(named: "settings")
-        let iconPaulin = UIImage(named: "paulinky")
-        let iconMaria = UIImage(named: "maria")
-        let iconPaul = UIImage(named: "paul")
-        let iconAppl = UIImage(named: "about_appl")
-        print("loadCrossMenu")
-        guard let maria_cross_station = CrossStationsMenu(name: "Křížová cesta s Marií", photo: iconMaria, order: 0) else {
+        let iconSettings = R.image.settings()
+        let iconPaulin = R.image.paulinky()
+        let iconMaria = R.image.maria()
+        let iconPaul = R.image.paul()
+        let iconAppl = R.image.about_appl()
+        
+        guard let maria_cross_station = MainMenu(name: "Křížová cesta s Marií", photo: iconMaria, order: 0) else {
             fatalError("Unable to instanciate Krizova cesta s Marii")
         }
-        guard let paul_cross_station = CrossStationsMenu(name: "Křížová cesta se sv. Pavlem", photo: iconPaul, order: 1) else {
+        guard let paul_cross_station = MainMenu(name: "Křížová cesta se sv. Pavlem", photo: iconPaul, order: 1) else {
             fatalError("Unable to instanciate Krizova cesta se sv. Pavlem")
         }
-        guard let setting = CrossStationsMenu(name: "Nastavení", photo: iconSettings, order: 2) else {
+        guard let settings = MainMenu(name: "Nastavení", photo: iconSettings, order: 2) else {
             fatalError("Unable to instanciate Nastaveni")
         }
-        guard let about_daughters = CrossStationsMenu(name: "O Dcerách sv. Pavla", photo: iconPaulin, order: 3) else {
+        guard let about_daughters = MainMenu(name: "O Dcerách sv. Pavla", photo: iconPaulin, order: 3) else {
             fatalError("Unable to instanciate O dcerach")
         }
-        guard let about_app = CrossStationsMenu(name: "O aplikaci", photo: iconAppl, order: 4) else {
+        guard let about_app = MainMenu(name: "O aplikaci", photo: iconAppl, order: 4) else {
             fatalError("Unable to instanciate O aplikaci")
         }
         rowData = [RowData(type: .maria_cross_stations, menu: maria_cross_station)]
         rowData.append(RowData(type: .paul_cross_stations, menu: paul_cross_station))
-        rowData.append(RowData(type: .setting, menu: setting))
+        rowData.append(RowData(type: .settings, menu: settings))
         rowData.append(RowData(type: .about_daughters, menu: about_daughters))
         rowData.append(RowData(type: .about_appl, menu: about_app))
     }

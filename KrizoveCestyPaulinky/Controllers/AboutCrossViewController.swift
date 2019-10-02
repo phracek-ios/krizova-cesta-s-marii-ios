@@ -11,14 +11,17 @@ import TTTAttributedLabel
 
 class AboutCrossViewController: BaseViewController, TTTAttributedLabelDelegate {
 
-    fileprivate var bookPaulinkyCZ: String = "https://www.paulinky.cz/obchod/produkt/S-Marii-na-krizove-ceste.html"
-    fileprivate var bookCZ: String = "S Marii na krizove ceste"
+    fileprivate var bookPaulinkyMariaCZ: String = "https://www.paulinky.cz/obchod/produkt/S-Marii-na-krizove-ceste.html"
+    fileprivate var bookMariaCZ: String = "S Marii na krizove ceste"
     fileprivate var bookPaulinkySK: String = "https://www.paulinky.cz/obchod/produkt/S-Mariou-na-krizovej-ceste.html"
     fileprivate var bookSK: String = "S Mariou na krizovej ceste"
+    fileprivate var bookPaulinkyPaulCZ: String = "https://www.paulinky.cz/obchod/produkt/Svetlem-pro-me-nohy-je-tve-slovo.html"
+    fileprivate var bookPaulCZ: String = "Světlem pro mé nohy je tvé slovo"
     
     var darkMode: Bool = false
     var font_name: String = "Helvetica"
     var font_size: CGFloat = 16
+    var mode: Int = 0
     fileprivate var aboutStructure: AboutStructure?
     
     
@@ -54,9 +57,15 @@ class AboutCrossViewController: BaseViewController, TTTAttributedLabelDelegate {
         }
         aboutLabel.numberOfLines = 0
         aboutLabel.delegate = self
-        aboutLabel.attributedText = generateContent(text: aboutStructure.about_cross_way, color: textColor)
-        aboutLabel.addLink(to: URL(string: bookPaulinkyCZ), with: NSRange(location: 40, length: bookCZ.count))
-        aboutLabel.addLink(to: URL(string: bookPaulinkySK), with: NSRange(location: 232, length: bookSK.count))
+        if mode == 0 {
+            aboutLabel.attributedText = generateContent(text: aboutStructure.about_cross_way_marie, color: textColor)
+            aboutLabel.addLink(to: URL(string: bookPaulinkyMariaCZ), with: NSRange(location: 40, length: bookMariaCZ.count))
+            aboutLabel.addLink(to: URL(string: bookPaulinkySK), with: NSRange(location: 232, length: bookSK.count))
+        } else {
+            aboutLabel.attributedText = generateContent(text: aboutStructure.about_cross_way_paul, color: textColor)
+            aboutLabel.addLink(to: URL(string: bookPaulinkyPaulCZ), with: NSRange(location: 421, length: bookPaulCZ.count))
+        }
+
 
     }
     
