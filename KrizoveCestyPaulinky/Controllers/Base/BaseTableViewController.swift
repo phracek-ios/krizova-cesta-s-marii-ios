@@ -12,11 +12,12 @@ class BaseTableViewController: UITableViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        setupNoTitleBackButton()
     }
     
     func setupNoTitleBackButton() {
         let backItem = UIBarButtonItem()
         backItem.title = ""
-        navigationItem.backBarButtonItem = backItem
+        self.navigationController?.navigationBar.topItem?.backBarButtonItem = backItem
     }
 }

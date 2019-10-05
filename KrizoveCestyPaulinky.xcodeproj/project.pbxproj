@@ -158,7 +158,6 @@
 			isa = PBXGroup;
 			children = (
 				019AEF1D232BA79B004A3003 /* Base */,
-				01026C42231E9DA000C7E52B /* MainTableViewController.swift */,
 				010C71EE231FC8C100EB3B2D /* AboutViewController.swift */,
 				010C71F4231FEDE600EB3B2D /* SettingsTableViewController.swift */,
 				010C71F6231FF44100EB3B2D /* FontViewController.swift */,
@@ -169,6 +168,7 @@
 				0123E7FA23420D95007C331C /* CrossTableViewController.swift */,
 				01026C44231E9DB900C7E52B /* CrossTableViewCell.swift */,
 				0188241623438B5B0070C454 /* MainTableViewCell.swift */,
+				01026C42231E9DA000C7E52B /* MainTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";

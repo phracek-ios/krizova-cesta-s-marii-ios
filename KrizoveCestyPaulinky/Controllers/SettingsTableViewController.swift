@@ -38,11 +38,13 @@ class SettingsTableViewController: BaseTableViewController {
         else {
             disabledDark()
         }
+        self.tableView.tableFooterView = UIView()
         dimOffSwitch.isOn = userDefaults.bool(forKey: "DimmScreen")
         invocationMarrySwitch.isOn = userDefaults.bool(forKey: "InvocationMarry")
         invocationJesusSwitch.isOn = userDefaults.bool(forKey: "InvocationJesus")
         set_font_text()
         navigationController?.navigationBar.barStyle = UIBarStyle.black;
+        self.tableView.tableFooterView = UIView()
     }
     deinit {
         NotificationCenter.default.removeObserver(self, name: .darkModeEnabled, object: nil)

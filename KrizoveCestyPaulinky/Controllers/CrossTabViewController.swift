@@ -46,7 +46,7 @@ class CrossTabViewController: ButtonBarPagerTabStripViewController {
                 vc.pagerTabTitle = "\(station.name)".uppercased()
                 vc.pageContent = station.text
                 vc.pager = i
-                vc.mode = 0
+                vc.mode = mode
                 controllers.append(vc)
             }
         } else if mode == 1 {
@@ -56,7 +56,7 @@ class CrossTabViewController: ButtonBarPagerTabStripViewController {
                 vc.pagerTabTitle = "\(station.name)".uppercased()
                 vc.pageContent = station.text
                 vc.pager = i
-                vc.mode = 1
+                vc.mode = mode
                 controllers.append(vc)
             }
         } else if mode == 2 {
@@ -67,7 +67,7 @@ class CrossTabViewController: ButtonBarPagerTabStripViewController {
             let latin = R.storyboard.main.childCrossTab()!
             latin.pagerTabTitle = "Latinsky"
             latin.pager = 1
-            latin.mode = 2
+            latin.mode = mode
             controllers.append(czech)
             controllers.append(latin)
         } else {
@@ -77,7 +77,7 @@ class CrossTabViewController: ButtonBarPagerTabStripViewController {
                 vc.pagerTabTitle = "\(prayer.name)".uppercased()
                 vc.pageContent = prayer.text
                 vc.pager = i
-                vc.mode = 0
+                vc.mode = 1
                 controllers.append(vc)
             }
         }
@@ -89,7 +89,12 @@ class CrossTabViewController: ButtonBarPagerTabStripViewController {
 // MARK: - Private
 private extension CrossTabViewController {
     func setupPagerTabBar() {
-        settings.style.buttonBarBackgroundColor = UIColor.KrizovaCestaSMarii.mainColor()
+        if mode == 0 {
+            settings.style.buttonBarBackgroundColor = UIColor.KrizovaCestaSMarii.mainColor()
+        }
+        else {
+            settings.style.buttonBarBackgroundColor = UIColor.KrizovaCestaSMarii.mainColorP()
+        }
         settings.style.buttonBarItemBackgroundColor = .clear
         settings.style.selectedBarBackgroundColor = UIColor.KrizovaCestaSMarii.yellowColor()
         settings.style.selectedBarHeight = 4

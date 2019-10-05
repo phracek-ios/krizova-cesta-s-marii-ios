@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CrossTableViewController: UITableViewController {
+class CrossTableViewController: BaseTableViewController {
 
     enum RowType {
         case about_cross_stations
@@ -42,7 +42,11 @@ class CrossTableViewController: UITableViewController {
             self.tableView.backgroundColor = UIColor.KrizovaCestaSMarii.backLightColor()
         }
         self.tableView.tableFooterView = UIView()
-        navigationController?.navigationBar.barTintColor = UIColor.KrizovaCestaSMarii.mainColor()
+        if mode == 0 {
+            navigationController?.navigationBar.barTintColor = UIColor.KrizovaCestaSMarii.mainColor()
+        } else {
+            navigationController?.navigationBar.barTintColor = UIColor.KrizovaCestaSMarii.mainColorP()
+        }
         navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.KrizovaCestaSMarii.mainTextColor()]
         navigationController?.navigationBar.barStyle = UIBarStyle.black;
         NotificationCenter.default.addObserver(self, selector: #selector(darkModeEnabled(_:)), name: .darkModeEnabled, object: nil)
@@ -88,7 +92,7 @@ class CrossTableViewController: UITableViewController {
         let data = rowData[indexPath.row]
         if data.type == .about_cross_stations {
             let aboutCrossStations = R.storyboard.main.aboutCrossStation()!
-            aboutCrossStations.mode = 1
+            aboutCrossStations.mode = mode
             navigationController?.pushViewController(aboutCrossStations, animated: true)
         }
         else if data.type == .cross_stations {

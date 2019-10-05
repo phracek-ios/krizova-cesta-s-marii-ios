@@ -21,6 +21,10 @@ extension UIColor {
             return UIColor(hexString: "#0168ba")
         }
         
+        static func mainColorP() -> UIColor {
+            return UIColor(hexString: "#851d01")
+        }
+        
         static func mainColor2() -> UIColor {
             return UIColor(hexString: "#072975")
         }

@@ -10,7 +10,7 @@ import UIKit
 
 class AboutViewController: BaseViewController {
 
-    let about_text: String = "<p>Křížové cesty - Paulínky<br><br>Offline mobilní verze pro iOS.</p><p>Aplikace obsahuje dvě křížové cesty, které vydali Paulínky.<br></p><p>Autor mobilní aplikace: Petr Hráček</p><br><br><p>Případné chyby, připomínky, nápady či postřehy prosím pište na adresu phracek@gmail.com.</p>"
+    let about_text: String = "<p>Křížové cesty - Paulínky<br>Offline mobilní verze pro iOS.</p><p>Aplikace poskytuje dvě křížové cesty, které vydalo nakladatelství Paulínky.<br><b>Křížová cesta s Marií</b><br><b>Křížová cesta se sv. Pavlem</b></p><p>Autor mobilní aplikace: Petr Hráček</p><br><p>Případné chyby, připomínky, nápady či postřehy prosím pište na adresu phracek@gmail.com.</p>"
     
     @IBOutlet weak var aboutLabel: UILabel!
     @IBOutlet weak var contentView: UIView!

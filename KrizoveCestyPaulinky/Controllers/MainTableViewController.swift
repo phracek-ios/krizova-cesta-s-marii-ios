@@ -30,6 +30,7 @@ class MainTableViewController: BaseTableViewController {
         super.viewDidLoad()
 
         loadCrossStationsMenu()
+        title = "Křížové cesty Paulínky"
         let userDefaults = UserDefaults.standard
         self.darkMode = userDefaults.bool(forKey: "NightSwitch")
         if self.darkMode {
@@ -38,13 +39,17 @@ class MainTableViewController: BaseTableViewController {
             self.tableView.backgroundColor = UIColor.KrizovaCestaSMarii.backLightColor()
         }
         self.tableView.tableFooterView = UIView()
-        navigationController?.navigationBar.barTintColor = UIColor.KrizovaCestaSMarii.mainColor()
+
         navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.KrizovaCestaSMarii.mainTextColor()]
         navigationController?.navigationBar.barStyle = UIBarStyle.black;
         NotificationCenter.default.addObserver(self, selector: #selector(darkModeEnabled(_:)), name: .darkModeEnabled, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(darkModeDisabled(_:)), name: .darkModeDisabled, object: nil)
     }
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.navigationBar.barTintColor = UIColor.KrizovaCestaSMarii.mainColor()
+    }
 
+    
     deinit {
         NotificationCenter.default.removeObserver(self, name: .darkModeEnabled, object: nil)
         NotificationCenter.default.removeObserver(self, name: .darkModeDisabled, object: nil)
