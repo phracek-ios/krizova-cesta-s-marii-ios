@@ -31,7 +31,7 @@
 		0179717F231E8BFA00BB9454 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0179717D231E8BFA00BB9454 /* LaunchScreen.storyboard */; };
 		0179718A231E8BFA00BB9454 /* KrizovaCestaSMariiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01797189231E8BFA00BB9454 /* KrizovaCestaSMariiTests.swift */; };
 		01797195231E8BFA00BB9454 /* KrizovaCestaSMariiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01797194231E8BFA00BB9454 /* KrizovaCestaSMariiUITests.swift */; };
-		017BDA742327D3A00019E672 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017BDA732327D39F0019E672 /* R.generated.swift */; };
+		01803A91234938AA00704AAE /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01803A90234938AA00704AAE /* R.generated.swift */; };
 		0188241723438B5B0070C454 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0188241623438B5B0070C454 /* MainTableViewCell.swift */; };
 		018A0CEC232F849B001ABA82 /* About.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018A0CEB232F849B001ABA82 /* About.swift */; };
 		018A0CEE232F8538001ABA82 /* AboutDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018A0CED232F8538001ABA82 /* AboutDataService.swift */; };
@@ -96,7 +96,7 @@
 		01797190231E8BFA00BB9454 /* KrizoveCestyPaulinkyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KrizoveCestyPaulinkyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		01797194231E8BFA00BB9454 /* KrizovaCestaSMariiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KrizovaCestaSMariiUITests.swift; sourceTree = "<group>"; };
 		01797196231E8BFA00BB9454 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		017BDA732327D39F0019E672 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		01803A90234938AA00704AAE /* R.generated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = R.generated.swift; path = ../R.generated.swift; sourceTree = "<group>"; };
 		0188241623438B5B0070C454 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
 		018A0CEB232F849B001ABA82 /* About.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = About.swift; sourceTree = "<group>"; };
 		018A0CED232F8538001ABA82 /* AboutDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutDataService.swift; sourceTree = "<group>"; };
@@ -221,8 +221,8 @@
 		01797173231E8BF800BB9454 /* KrizoveCestyPaulinky */ = {
 			isa = PBXGroup;
 			children = (
+				01803A90234938AA00704AAE /* R.generated.swift */,
 				01105421234397C900694D84 /* Assets.xcassets */,
-				017BDA732327D39F0019E672 /* R.generated.swift */,
 				01EECA43232249130071732B /* Services */,
 				010C71EC231FC6DE00EB3B2D /* CrossStationsMenu.swift */,
 				010C71E7231FA43400EB3B2D /* Utilities */,
@@ -496,7 +496,6 @@
 				01026C43231E9DA000C7E52B /* MainTableViewController.swift in Sources */,
 				019AEF1F232BA7B4004A3003 /* BaseTableViewController.swift in Sources */,
 				011054262343985F00694D84 /* GeneratorText.swift in Sources */,
-				017BDA742327D3A00019E672 /* R.generated.swift in Sources */,
 				018A0CEE232F8538001ABA82 /* AboutDataService.swift in Sources */,
 				010C71E6231FA42F00EB3B2D /* NotificationsName.swift in Sources */,
 				019AEF21232BA859004A3003 /* BaseViewController.swift in Sources */,
@@ -510,6 +509,7 @@
 				011054282343986400694D84 /* Styles.swift in Sources */,
 				016D9CBA2330FB60005688B4 /* CrossTabViewController.swift in Sources */,
 				01EECA5123224CE70071732B /* StabatMaterDataService.swift in Sources */,
+				01803A91234938AA00704AAE /* R.generated.swift in Sources */,
 				01EECA4723224AB20071732B /* Station.swift in Sources */,
 				010C71F5231FEDE600EB3B2D /* SettingsTableViewController.swift in Sources */,
 				0188241723438B5B0070C454 /* MainTableViewCell.swift in Sources */,
@@ -627,7 +627,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -682,7 +682,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
